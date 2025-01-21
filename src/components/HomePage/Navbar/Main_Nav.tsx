@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
+import BookingWidget from "../Booking_Widget/BookingWidget";
 export function MainNav() {
   const [isOpen, setIsOpen] = React.useState(false);
-
   return (
     <>
       {" "}
@@ -19,7 +19,7 @@ export function MainNav() {
               {/* Logo Image */}
               <Link href="/" className="flex items-center space-x-2">
                 <Image
-                  src="/assets/images/logo.png"
+                  src="/assets/images/logo/logo.png"
                   alt="Rupakot Resort Logo"
                   height={40}
                   width={40}
@@ -128,32 +128,8 @@ export function MainNav() {
             </div>
           </div>
         </nav>
-
         {/* Booking Widget */}
-        <div className="bg-primary border-t border-gray-700 py-4">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-white text-xl">BOOK ONLINE</div>
-              <div className="flex flex-wrap gap-4 items-center">
-                <div className="bg-white p-2 rounded min-w-[200px]">
-                  <div className="text-sm text-gray-600">Check-in</div>
-                  <div className="font-semibold">21/01/2025</div>
-                </div>
-                <div className="bg-white p-2 rounded min-w-[200px]">
-                  <div className="text-sm text-gray-600">Check-out</div>
-                  <div className="font-semibold">22/01/2025</div>
-                </div>
-                <div className="bg-white p-2 rounded min-w-[200px]">
-                  <div className="text-sm text-gray-600">Guests</div>
-                  <div className="font-semibold">2 adults, 0 children</div>
-                </div>
-                <Button className="bg-[#006600] text-white hover:bg-[#005500] min-w-[150px]">
-                  FIND ROOM
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <BookingWidget />
       </div>
     </>
   );
