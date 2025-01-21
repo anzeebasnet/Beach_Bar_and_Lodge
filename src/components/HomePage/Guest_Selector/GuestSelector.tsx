@@ -14,7 +14,6 @@ interface GuestCount {
   adults: number;
   children: number;
   rooms: number;
-  pets: boolean;
 }
 
 export function GuestSelector() {
@@ -22,15 +21,11 @@ export function GuestSelector() {
     adults: 2,
     children: 0,
     rooms: 1,
-    pets: false,
   });
 
   const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
 
-  const updateCount = (
-    type: keyof Omit<GuestCount, "pets">,
-    increment: boolean
-  ) => {
+  const updateCount = (type: keyof GuestCount, increment: boolean) => {
     setGuestCount((prev) => ({
       ...prev,
       [type]: increment
@@ -58,10 +53,10 @@ export function GuestSelector() {
   return (
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
-        <div className="bg-white p-2 rounded min-w-[320px]  cursor-pointer">
+        <div className="bg-white p-2 rounded min-w-[320px]  cursor-pointer ">
           <div className="text-base text-gray-600">Guests</div>
-          <div className="flex items-center gap-2">
-            <UserRound className="w-6 h-8" />
+          <div className="flex items-center gap-2 border border-gray-200 rounded">
+            <UserRound className="h-8 ml-2 text-gray-600" />
             {getSummaryText()}
           </div>
         </div>
