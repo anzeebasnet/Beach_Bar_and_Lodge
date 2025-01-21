@@ -2,16 +2,25 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import BookingWidget from "../Booking_Widget/BookingWidget";
+
 export function MainNav() {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const navLinks = [
+    { href: "/rooms", label: "OUR ROOMS" },
+    { href: "/packages", label: "PACKAGES" },
+    { href: "/gallery", label: "GALLERY" },
+    { href: "/about", label: "ABOUT US" },
+    { href: "/contact", label: "CONTACT US" },
+  ];
+
   return (
     <>
-      {" "}
       <div className="sticky top-0 z-50">
         <nav className="bg-primary text-black">
           <div className="container mx-auto px-4">
@@ -20,7 +29,7 @@ export function MainNav() {
               <Link href="/" className="flex items-center space-x-2">
                 <Image
                   src="/assets/images/logo/logo.png"
-                  alt="Rupakot Resort Logo"
+                  alt="Beach Bar"
                   height={40}
                   width={40}
                   className="h-16 w-auto"
@@ -29,36 +38,15 @@ export function MainNav() {
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
-                <Link
-                  href="/rooms"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  OUR ROOMS
-                </Link>
-                <Link
-                  href="/packages"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  PACKAGES
-                </Link>
-                <Link
-                  href="/gallery"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  GALLERY
-                </Link>
-                <Link
-                  href="/about"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  ABOUT US
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  CONTACT US
-                </Link>
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-white hover:text-gray-300 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </div>
 
               {/* Book Now Button */}
@@ -71,9 +59,9 @@ export function MainNav() {
                 </Button>
               </div>
 
-              {/* Mobile Button */}
+              {/* Mobile Navigation */}
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger asChild className="md:hidden">
+                <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" className="text-white">
                     <Menu className="h-6 w-6" />
                     <span className="sr-only">Toggle menu</span>
@@ -81,41 +69,16 @@ export function MainNav() {
                 </SheetTrigger>
                 <SheetContent side="right" className="bg-[#003300] text-white">
                   <div className="flex flex-col space-y-6 mt-6">
-                    <Link
-                      href="/rooms"
-                      className="text-lg hover:text-gray-300 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      OUR ROOMS
-                    </Link>
-                    <Link
-                      href="/packages"
-                      className="text-lg hover:text-gray-300 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      PACKAGES
-                    </Link>
-                    <Link
-                      href="/gallery"
-                      className="text-lg hover:text-gray-300 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      GALLERY
-                    </Link>
-                    <Link
-                      href="/about"
-                      className="text-lg hover:text-gray-300 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      ABOUT US
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="text-lg hover:text-gray-300 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      CONTACT US
-                    </Link>
+                    {navLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="text-lg hover:text-gray-300 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
                     <Button
                       variant="secondary"
                       className="bg-black text-white hover:bg-gray-900 w-full"
