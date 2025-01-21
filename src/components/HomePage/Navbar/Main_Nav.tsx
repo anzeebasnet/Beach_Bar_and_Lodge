@@ -19,18 +19,18 @@ export function MainNav() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navLinks = [
-    { href: "/rooms", label: "OUR ROOMS" },
-    { href: "/packages", label: "PACKAGES" },
-    { href: "/gallery", label: "GALLERY" },
-    { href: "/about", label: "ABOUT US" },
-    { href: "/contact", label: "CONTACT US" },
+    { href: "/rooms", label: "Our Rooms" },
+    { href: "/packages", label: "Packages" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/about", label: "About Us" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
     <>
       <div className="sticky top-0 z-50">
         <nav className="bg-primary text-black">
-          <div className="container mx-auto px-4">
+          <div className="mx-auto px-4">
             <div className="flex h-20 items-center justify-between">
               {/* Logo Image */}
               <Link href="/" className="flex items-center space-x-2">
@@ -44,7 +44,7 @@ export function MainNav() {
               </Link>
 
               {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden md:flex items-center space-x-6">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}

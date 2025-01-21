@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Minus, Plus } from "lucide-react";
+import { Minus, Plus, UserRound } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -42,13 +42,6 @@ export function GuestSelector() {
     }));
   };
 
-  const togglePets = () => {
-    setGuestCount((prev) => ({
-      ...prev,
-      pets: !prev.pets,
-    }));
-  };
-
   const getSummaryText = () => {
     const parts = [];
     parts.push(
@@ -65,12 +58,15 @@ export function GuestSelector() {
   return (
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
-        <div className="bg-white p-2 rounded min-w-[200px] cursor-pointer">
-          <div className="text-sm text-gray-600">Guests</div>
-          <div className="font-semibold">{getSummaryText()}</div>
+        <div className="bg-white p-2 rounded min-w-[320px]  cursor-pointer">
+          <div className="text-base text-gray-600">Guests</div>
+          <div className="flex items-center gap-2">
+            <UserRound className="w-6 h-8" />
+            {getSummaryText()}
+          </div>
         </div>
       </PopoverTrigger>
-      <PopoverContent className="w-80 p-4">
+      <PopoverContent className="w-80 p-4 ">
         <div className="space-y-4">
           {/* Adults */}
           <div className="flex items-center justify-between">
