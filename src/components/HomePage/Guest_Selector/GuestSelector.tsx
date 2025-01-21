@@ -25,6 +25,8 @@ export function GuestSelector() {
     pets: false,
   });
 
+  const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
+
   const updateCount = (
     type: keyof Omit<GuestCount, "pets">,
     increment: boolean
@@ -61,7 +63,7 @@ export function GuestSelector() {
   };
 
   return (
-    <Popover>
+    <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
         <div className="bg-white p-2 rounded min-w-[200px] cursor-pointer">
           <div className="text-sm text-gray-600">Guests</div>
@@ -148,7 +150,10 @@ export function GuestSelector() {
             </div>
           </div>
 
-          <Button className="w-full mt-4" onClick={() => {}}>
+          <Button
+            className="w-full mt-4"
+            onClick={() => setIsPopoverOpen(false)}
+          >
             Done
           </Button>
         </div>

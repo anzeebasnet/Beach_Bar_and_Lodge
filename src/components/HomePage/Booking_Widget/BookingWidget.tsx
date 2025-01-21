@@ -7,7 +7,7 @@ const BookingWidget = () => {
   return (
     <>
       <div className="bg-primary border-t border-gray-700 py-4">
-        <div className="container mx-auto px-4">
+        <div className=" px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-white text-xl">BOOK ONLINE</div>
             <div className="flex flex-wrap gap-4 items-center">
