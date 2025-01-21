@@ -13,7 +13,7 @@ export function MainNav() {
     <>
       {" "}
       <div className="sticky top-0 z-50">
-        <nav className="bg-primary text-white">
+        <nav className="bg-primary text-black">
           <div className="container mx-auto px-4">
             <div className="flex h-20 items-center justify-between">
               {/* Logo Image */}
@@ -71,7 +71,7 @@ export function MainNav() {
                 </Button>
               </div>
 
-              {/* Mobile Menu Button */}
+              {/* Mobile Button */}
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild className="md:hidden">
                   <Button variant="ghost" size="icon" className="text-white">
