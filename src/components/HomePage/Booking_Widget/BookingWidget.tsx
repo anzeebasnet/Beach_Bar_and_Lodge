@@ -1,42 +1,106 @@
-import { Button } from "@/components/ui/button";
-import { DatePickerWithRange } from "@/components/ui/daterangepicker";
-import React from "react";
-import { GuestSelector } from "../Guest_Selector/GuestSelector";
+"use client";
 
-const BookingWidget = () => {
+import { useState } from "react";
+import { Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar as CalendarComponent } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
+import { format } from "date-fns";
+import GuestSelector from "../Guest_Selector/GuestSelector";
+
+export default function HotelBookingForm() {
+  const [checkIn, setCheckIn] = useState<Date>();
+  const [checkOut, setCheckOut] = useState<Date>();
+
   return (
-    <>
-      <div className="bg-primary border-t border-gray-700 py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-white text-xl">BOOK ONLINE</div>
-            <div className="flex flex-wrap gap-4 items-center">
-              <div className="bg-white p-2 rounded min-w-[200px]">
-                <div className="text-base text-gray-600">Check-in</div>
-                <div>
-                  <DatePickerWithRange />
-                </div>
-              </div>
-              <div className="bg-white p-2 rounded min-w-[200px]">
-                <div className="text-base text-gray-600">Check-out</div>
-                <div>
-                  <DatePickerWithRange />
-                </div>
-              </div>
-              {/* <div className="bg-white p-2 rounded min-w-[200px]">
-                <div className="text-base text-gray-600">Guests</div>
-                <div className="font-semibold">2 adults, 0 children</div>
-              </div> */}
-              <GuestSelector />
-              <Button className="bg-secondary text-white hover:bg-[#005500] min-w-[150px]">
-                FIND ROOM
-              </Button>
-            </div>
+    <div className="border-t border-gray-500 bg-primary p-4 md:p-6">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-2xl font-semibold text-white mb-4">
+          Book Your Stay
+        </h2>
+        <div className="grid gap-4 md:grid-cols-4 md:gap-6">
+          {/* Check-in Date */}
+          <div className="relative">
+            <label className="mb-2 block text-sm font-medium text-white">
+              Check-in
+            </label>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "w-full justify-start bg-white text-left font-normal hover:bg-white",
+                    !checkIn && "text-muted-foreground"
+                  )}
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  {checkIn ? format(checkIn, "MMM dd, yyyy") : "Select date"}
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-auto p-0" align="start">
+                <CalendarComponent
+                  mode="single"
+                  selected={checkIn}
+                  onSelect={setCheckIn}
+                  initialFocus
+                />
+              </PopoverContent>
+            </Popover>
+          </div>
+
+          {/* Check-out Date */}
+          <div className="relative">
+            <label className="mb-2 block text-sm font-medium text-white">
+              Check-out
+            </label>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "w-full justify-start bg-white text-left font-normal hover:bg-white",
+                    !checkOut && "text-muted-foreground"
+                  )}
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  {checkOut ? format(checkOut, "MMM dd, yyyy") : "Select date"}
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-auto p-0" align="start">
+                <CalendarComponent
+                  mode="single"
+                  selected={checkOut}
+                  onSelect={setCheckOut}
+                  initialFocus
+                />
+              </PopoverContent>
+            </Popover>
+          </div>
+
+          {/* Guests */}
+          <div className="relative">
+            <label className="mb-2 block text-sm font-medium text-white">
+              Guests
+            </label>
+            <GuestSelector />
+          </div>
+
+          {/* Find Room Button */}
+          <div className="flex items-end">
+            <Button
+              className="w-full bg-green-600 text-white hover:bg-green-700"
+              size="lg"
+            >
+              FIND ROOM
+            </Button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default BookingWidget;
+}
