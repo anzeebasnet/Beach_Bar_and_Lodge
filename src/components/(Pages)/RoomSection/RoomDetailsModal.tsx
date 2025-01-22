@@ -59,7 +59,7 @@ export function RoomDetailsModal({
         <DialogHeader>
           <DialogTitle>{room.title}</DialogTitle>
           <DialogDescription>
-            ${room.price.toFixed(2)} {room.currency} / {room.priceInterval}
+            NPR{room.price.toFixed(2)} {room.currency} / {room.priceInterval}
           </DialogDescription>
         </DialogHeader>
         <div className="mt-4">
