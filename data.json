@@ -1,0 +1,66 @@
+{
+    "CardDetails": {
+      "RestroViewDetails": [
+        {
+          "id": 1,
+          "title": "Scenic Lakefront Paradise",
+          "image": "/assets/images/Lake.jpg",
+          "desc": ""
+        },
+        {
+          "id": 2,
+          "title": "Swing at Sunset",
+          "image": "/assets/images/swing.jpg",
+          "desc": ""
+        },
+        {
+          "id": 3,
+          "title": "Nighttime Ambiance",
+          "image": "/assets/images/nightView.jpg",
+          "desc": ""
+        },
+        {
+          "id": 4,
+          "title": "Tranquil Poolside Escape",
+          "image": "/assets/images/poolArea.jpg",
+          "desc": ""
+        },
+        {
+          "id": 5,
+          "title": "Indoor Dining Space",
+          "image": "/assets/images/sittingArea.jpg",
+          "desc": ""
+        },
+        {
+          "id": 6,
+          "title": "Dinner with Scenic Views",
+          "image": "/assets/images/dinnerWView.jpg",
+          "desc": ""
+        },
+        {
+          "id": 7,
+          "title": "Beachside Seating",
+          "image": "/assets/images/beachSide.jpg",
+          "desc": ""
+        },
+        {
+          "id": 8,
+          "title": "Evening Bar Glow",
+          "image": "/assets/images/bar.jpg",
+          "desc": ""
+        },
+        {
+          "id": 9,
+          "title": "Frontyard Serenity",
+          "image": "/assets/images/frontYardView.jpg",
+          "desc": ""
+        },
+        {
+          "id": 8,
+          "title": "Sunset Reflections",
+          "image": "/assets/images/goldenHour.jpeg",
+          "desc": ""
+        }
+      ]
+    }
+}
