@@ -1,4 +1,4 @@
-import RoomsSection from "@/components/RoomSection/RoomSection";
+import RoomsSection from "@/components/(Pages)/RoomSection/RoomSection";
 import React from "react";
 
 const page = () => {
