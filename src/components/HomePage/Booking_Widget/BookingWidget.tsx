@@ -12,6 +12,7 @@ import {
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import GuestSelector from "../Guest_Selector/GuestSelector";
+import Link from "next/link";
 
 export default function HotelBookingForm() {
   const [checkIn, setCheckIn] = useState<Date>();
@@ -92,12 +93,14 @@ export default function HotelBookingForm() {
 
           {/* Find Room Button */}
           <div className="flex items-end">
-            <Button
-              className="w-full bg-green-600 text-white hover:bg-green-700"
-              size="lg"
-            >
-              FIND ROOM
-            </Button>
+            <Link href="/rooms">
+              <Button
+                className="w-full bg-green-600 text-white hover:bg-green-700"
+                size="lg"
+              >
+                FIND ROOM
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

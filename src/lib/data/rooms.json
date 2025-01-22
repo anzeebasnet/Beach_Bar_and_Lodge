@@ -1,0 +1,175 @@
+{
+  "title": "EXPLORE ROOMS",
+  "heading": "Rooms & Suits",
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Invisible House Joshua Tree - Skyscraper with Pool",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+
+      "imageAlt": "Cozy winter bedroom with snow view",
+      "price": 240.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Experience luxury in the heart of Joshua Tree. This stunning skyscraper-inspired house features a 100-foot indoor swimming pool and breathtaking views of the surrounding desert landscape.",
+      "amenities": [
+        "Pool",
+        "Wi-Fi",
+        "Kitchen",
+        "Air conditioning",
+        "Free parking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Heavenly Treehouse in Countryside Farm",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Modern hotel room with two beds",
+      "price": 180.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Escape to this charming treehouse nestled in a peaceful countryside farm. Enjoy the serenity of nature with modern comforts and a unique elevated perspective.",
+      "amenities": [
+        "Wi-Fi",
+        "Heating",
+        "Breakfast",
+        "Private bathroom",
+        "Farm tours"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Luxury Oceanfront Suite - Stunning Views",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Luxury suite with ocean view balcony",
+      "price": 350.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Wake up to the sound of waves in this luxury oceanfront suite. With a private balcony overlooking the sea, it’s perfect for a romantic getaway.",
+      "amenities": [
+        "Ocean view",
+        "Private balcony",
+        "Hot tub",
+        "Complimentary drinks",
+        "Room service"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Rustic Cabin in the Woods",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Rustic cabin surrounded by tall trees",
+      "price": 120.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Unplug and reconnect with nature in this cozy rustic cabin surrounded by tall trees. A perfect retreat for adventure seekers and nature lovers.",
+      "amenities": [
+        "Fireplace",
+        "Kitchenette",
+        "Hiking trails",
+        "Pet-friendly",
+        "Outdoor grill"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Elegant Penthouse with City View",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Penthouse suite with stunning city skyline",
+      "price": 500.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Experience the height of sophistication in this elegant penthouse with a panoramic view of the city skyline and luxurious interiors.",
+      "amenities": [
+        "City view",
+        "Private elevator",
+        "Spa bath",
+        "Concierge service",
+        "Rooftop access"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Mountain Retreat Chalet",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Chalet in the mountains with snow-covered peaks",
+      "price": 275.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Relax in this charming chalet nestled in the mountains. Perfect for ski enthusiasts or those seeking a peaceful snowy retreat.",
+      "amenities": [
+        "Ski-in/ski-out access",
+        "Fireplace",
+        "Wi-Fi",
+        "Hot tub",
+        "Snow gear rental"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Beachside Bungalow",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Bungalow near the beach with a hammock",
+      "price": 220.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Step out onto white sands from this charming beachside bungalow. Relax in a hammock and enjoy the ocean breeze.",
+      "amenities": [
+        "Beach access",
+        "Hammock",
+        "Outdoor shower",
+        "Wi-Fi",
+        "Breakfast included"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Historic Castle Room",
+      "images": [
+        "/assets/images/room.jpg",
+        "/assets/images/bar.jpg",
+        "/assets/images/room.jpg"
+      ],
+      "imageAlt": "Room in a historic castle with antique furniture",
+      "price": 400.0,
+      "currency": "USD",
+      "priceInterval": "night",
+      "description": "Stay in a piece of history. This castle room features antique furniture, medieval decor, and a unique charm.",
+      "amenities": [
+        "Antique decor",
+        "Guided castle tour",
+        "Complimentary wine",
+        "Library",
+        "Garden access"
+      ]
+    }
+  ]
+}
