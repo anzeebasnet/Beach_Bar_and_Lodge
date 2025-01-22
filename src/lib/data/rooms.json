@@ -4,18 +4,18 @@
   "rooms": [
     {
       "id": 1,
-      "title": "Invisible House Joshua Tree - Skyscraper with Pool",
+      "title": "Twin Room with Lake View",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
 
       "imageAlt": "Cozy winter bedroom with snow view",
       "price": 240.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
-      "description": "Experience luxury in the heart of Joshua Tree. This stunning skyscraper-inspired house features a 100-foot indoor swimming pool and breathtaking views of the surrounding desert landscape.",
+      "description": "The spacious twin room features air conditioning, a private entrance, a terrace with lake views as well as a private bathroom boasting a shower. The unit has 1 bed.",
       "amenities": [
         "Pool",
         "Wi-Fi",
@@ -26,36 +26,36 @@
     },
     {
       "id": 2,
-      "title": "Heavenly Treehouse in Countryside Farm",
+      "title": "Double Room with Lake View",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Modern hotel room with two beds",
       "price": 180.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
-      "description": "Escape to this charming treehouse nestled in a peaceful countryside farm. Enjoy the serenity of nature with modern comforts and a unique elevated perspective.",
+      "description": "The spacious double room offers air conditioning, a private entrance, a terrace with lake views as well as a private bathroom featuring a shower. The unit offers 1 bed.",
       "amenities": [
         "Wi-Fi",
         "Heating",
         "Breakfast",
-        "Private bathroom",
-        "Farm tours"
+        "Socket near the bed",
+        "Terrace"
       ]
     },
     {
       "id": 3,
       "title": "Luxury Oceanfront Suite - Stunning Views",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room3.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Luxury suite with ocean view balcony",
       "price": 350.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Wake up to the sound of waves in this luxury oceanfront suite. With a private balcony overlooking the sea, it’s perfect for a romantic getaway.",
       "amenities": [
@@ -70,13 +70,13 @@
       "id": 4,
       "title": "Rustic Cabin in the Woods",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Rustic cabin surrounded by tall trees",
       "price": 120.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Unplug and reconnect with nature in this cozy rustic cabin surrounded by tall trees. A perfect retreat for adventure seekers and nature lovers.",
       "amenities": [
@@ -91,13 +91,13 @@
       "id": 5,
       "title": "Elegant Penthouse with City View",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Penthouse suite with stunning city skyline",
       "price": 500.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Experience the height of sophistication in this elegant penthouse with a panoramic view of the city skyline and luxurious interiors.",
       "amenities": [
@@ -112,13 +112,13 @@
       "id": 6,
       "title": "Mountain Retreat Chalet",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Chalet in the mountains with snow-covered peaks",
       "price": 275.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Relax in this charming chalet nestled in the mountains. Perfect for ski enthusiasts or those seeking a peaceful snowy retreat.",
       "amenities": [
@@ -133,13 +133,13 @@
       "id": 7,
       "title": "Beachside Bungalow",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Bungalow near the beach with a hammock",
       "price": 220.0,
-      "currency": "USD",
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Step out onto white sands from this charming beachside bungalow. Relax in a hammock and enjoy the ocean breeze.",
       "amenities": [
@@ -154,13 +154,13 @@
       "id": 8,
       "title": "Historic Castle Room",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Room in a historic castle with antique furniture",
-      "price": 400.0,
-      "currency": "USD",
+      "price": 6000.0,
+      "currency": "NPR",
       "priceInterval": "night",
       "description": "Stay in a piece of history. This castle room features antique furniture, medieval decor, and a unique charm.",
       "amenities": [

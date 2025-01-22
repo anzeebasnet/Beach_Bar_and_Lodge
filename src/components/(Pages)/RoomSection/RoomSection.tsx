@@ -53,7 +53,7 @@ export default function RoomsSection() {
               <div className="flex items-center justify-between">
                 <div>
                   <span className="text-lg font-semibold">
-                    $ {room.price.toFixed(2)} {room.currency}
+                    {room.currency} {room.price.toFixed(2)}
                   </span>
                   <span className="text-muted-foreground ml-1">
                     /{room.priceInterval}
