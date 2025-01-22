@@ -6,9 +6,9 @@
       "id": 1,
       "title": "Invisible House Joshua Tree - Skyscraper with Pool",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
 
       "imageAlt": "Cozy winter bedroom with snow view",
@@ -28,9 +28,9 @@
       "id": 2,
       "title": "Heavenly Treehouse in Countryside Farm",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Modern hotel room with two beds",
       "price": 180.0,
@@ -49,9 +49,9 @@
       "id": 3,
       "title": "Luxury Oceanfront Suite - Stunning Views",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room3.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Luxury suite with ocean view balcony",
       "price": 350.0,
@@ -70,9 +70,9 @@
       "id": 4,
       "title": "Rustic Cabin in the Woods",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Rustic cabin surrounded by tall trees",
       "price": 120.0,
@@ -91,9 +91,9 @@
       "id": 5,
       "title": "Elegant Penthouse with City View",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Penthouse suite with stunning city skyline",
       "price": 500.0,
@@ -112,9 +112,9 @@
       "id": 6,
       "title": "Mountain Retreat Chalet",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Chalet in the mountains with snow-covered peaks",
       "price": 275.0,
@@ -133,9 +133,9 @@
       "id": 7,
       "title": "Beachside Bungalow",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Bungalow near the beach with a hammock",
       "price": 220.0,
@@ -154,9 +154,9 @@
       "id": 8,
       "title": "Historic Castle Room",
       "images": [
-        "/assets/images/room.jpg",
-        "/assets/images/bar.jpg",
-        "/assets/images/room.jpg"
+        "/assets/images/rooms/room4.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Room in a historic castle with antique furniture",
       "price": 400.0,
