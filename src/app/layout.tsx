@@ -22,10 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <div className="fixed top-0 left-0 w-full z-10 bg-white shadow-md">
-          <MainNav />
-        </div>
-        <ScrollArea className="h-[calc(100vh-60px)] mt-[60px]">
+        <ScrollArea className="h-[100vh]">
+          {/* <MainNav /> */}
           {children}
         </ScrollArea>
       </body>
