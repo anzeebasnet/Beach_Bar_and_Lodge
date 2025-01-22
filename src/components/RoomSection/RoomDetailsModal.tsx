@@ -50,7 +50,11 @@ export function RoomDetailsModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[600px]">
+      <DialogContent
+        style={{
+          overflowY: "auto",
+        }}
+      >
         <DialogHeader>
           <DialogTitle>{room.title}</DialogTitle>
           <DialogDescription>

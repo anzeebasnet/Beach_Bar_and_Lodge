@@ -25,12 +25,12 @@ export default function RoomsSection() {
         <p className="text-sm uppercase tracking-wider mb-4 text-muted-foreground">
           {roomsData.title}
         </p>
-        <h2 className="text-4xl md:text-6xl font-bold text-[#0a2342]">
+        <h2 className="text-3xl md:text-5xl font-bold text-[#0a2342]">
           {roomsData.heading}
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {roomsData.rooms.map((room) => (
           <div key={room.id} className="group relative">
             <div
