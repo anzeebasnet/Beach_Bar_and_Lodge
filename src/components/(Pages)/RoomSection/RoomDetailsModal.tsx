@@ -32,7 +32,7 @@ export function RoomDetailsModal({
   onClose,
 }: RoomDetailsModalProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel();
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -42,9 +42,9 @@ export function RoomDetailsModal({
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  const onSelect = useCallback(() => {
-    if (emblaApi) setCurrentSlide(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+  // const onSelect = useCallback(() => {
+  //   if (emblaApi) setCurrentSlide(emblaApi.selectedScrollSnap());
+  // }, [emblaApi]);
 
   if (!room) return null;
 
@@ -57,8 +57,10 @@ export function RoomDetailsModal({
         }}
       >
         <DialogHeader>
-          <DialogTitle>{room.title}</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-primary text-xl">
+            {room.title}
+          </DialogTitle>
+          <DialogDescription className="text-gray-800 text-base">
             NPR{room.price.toFixed(2)} {room.currency} / {room.priceInterval}
           </DialogDescription>
         </DialogHeader>
@@ -97,7 +99,7 @@ export function RoomDetailsModal({
               <ChevronRight className="h-4 w-4" />
             </Button>
           </div>
-          <div className="flex justify-center mt-2">
+          {/* <div className="flex justify-center mt-2">
             {room.images.map((_, index) => (
               <div
                 key={index}
@@ -106,10 +108,10 @@ export function RoomDetailsModal({
                 }`}
               />
             ))}
-          </div>
-          <p className="text-sm text-gray-500 my-4">{room.description}</p>
+          </div> */}
+          <p className="text-base text-gray-600 my-4">{room.description}</p>
           <h4 className="font-semibold mb-2">Amenities:</h4>
-          <ul className="list-disc list-inside text-sm text-gray-500">
+          <ul className="list-disc list-inside text-sm text-gray-600">
             {room.amenities.map((amenity, index) => (
               <li key={index}>{amenity}</li>
             ))}
