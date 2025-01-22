@@ -51,11 +51,9 @@ export function RoomDetailsModal({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent
-        className="rounded-lg p-10"
         style={{
           overflowY: "auto",
-          height: "calc(100vh - 2rem)",
-          maxWidth: "calc(40vw - 2rem)",
+          maxHeight: "calc(100vh - 2rem)",
         }}
       >
         <DialogHeader>
