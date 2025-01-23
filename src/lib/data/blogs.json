@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Escape to Paradise",
+      "image": "/assets/images/hotel_view/Lake.jpg",
+      "desc": "Tucked away on a pristine stretch of coastline, Beach Bar and Lodge is the ultimate retreat for those seeking tranquility and luxury. Picture yourself waking up to the soothing rhythm of the waves, with sunlight streaming into your elegantly designed room. Each accommodation offers a perfect blend of modern comfort and coastal charm, with stunning views of the lake to greet you each morning. Our beach bar serves a variety of handcrafted cocktails and fresh, locally inspired dishes, ensuring that every meal is a delight. Whether you're lounging by the water or enjoying a refreshing drink under the swaying palms, Beach Bar and Lodge invites you to leave your worries behind and embrace a world of relaxation. The warm hospitality of our staff ensures that your stay feels like a home away from home, where every detail is carefully curated to create a truly memorable experience. Escape to Beach Bar and Lodge and rediscover what it means to live in the moment."
+    },
+    {
+      "id": 2,
+      "title": "Sunset Serenity",
+      "image": "/assets/images/hotel_view/swing.jpg",
+      "desc": "The sunsets at Beach Bar and Lodge are nothing short of breathtaking. As the day draws to a close, the sky transforms into a mesmerizing canvas of oranges, pinks, and purples, reflecting beautifully on the calm waters. Guests can sip on their favorite cocktails from our beachside bar while sitting on the deck or lounging in a cozy chair along the shore. The ambiance is magical, with the gentle sounds of the ocean and the soft glow of lanterns adding to the serenity. Every sunset feels like a private show, crafted just for you, as you unwind and savor the beauty of nature. Take a moment to capture these enchanting scenes with your loved ones, or simply let the tranquility wash over you as you lose yourself in the horizon. At Beach Bar and Lodge, every sunset is a celebration of life’s simple pleasures."
+    },
+    {
+      "id": 3,
+      "title": "Lakefront Luxury and Relaxation",
+      "image": "/assets/images/hotel_view/frontYardView.jpg",
+      "desc": "Discover the perfect harmony of comfort and nature at Beach Bar and Lodge, set along the shores of a picturesque lake. The gentle ripples of the water and the surrounding natural beauty provide a calming backdrop for your stay. Take a refreshing swim in the clear, cool lake or enjoy a scenic boat ride as the sunlight dances on the water's surface. For those looking to unwind, our private lakefront cabanas offer a serene space to relax and soak in the view. Evenings at the lodge are nothing short of magical, with soft breezes and a spectacular display of stars reflected in the lake. Whether you’re looking for a romantic getaway or a peaceful escape, Beach Bar and Lodge offers an unforgettable lakeside retreat where every moment feels like a luxury."
+    }
+  ]
