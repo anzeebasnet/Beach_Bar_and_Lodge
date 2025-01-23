@@ -8,7 +8,7 @@ export default function Home() {
       <div
         className="bg-cover bg-center h-screen"
         style={{
-          backgroundImage: "url('/assets/images/hotel_view/wholeView.jpg')",
+          backgroundImage: "url('/assets/images/hotel_view/frontYardView.jpg')",
           // boxShadow: "30px 30px 10px rgb(26, 26, 240)",
         }}
       ></div>
