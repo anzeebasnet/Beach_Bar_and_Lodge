@@ -20,7 +20,7 @@ export default function RoomsSection() {
   };
 
   return (
-    <section className="container mx-auto px-4 py-52 md:py-10 lg:py-10">
+    <section className="container mx-auto px-4 py-10 ">
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-wider mb-4 text-muted-foreground">
           {roomsData.title}

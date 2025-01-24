@@ -27,9 +27,9 @@ export default function HotelBookingForm() {
   return (
     <div className="border-t border-gray-500 bg-primary p-4 md:p-6">
       <div className="mx-auto max-w-6xl ">
-        <h2 className="text-2xl font-semibold text-white mb-4 md:block hidden">
+        {/* <h2 className="text-xl font-semibold text-white mb-4 md:block hidden">
           Book Your Stay
-        </h2>
+        </h2> */}
         <Accordion type="single" className="md:hidden block" collapsible>
           <AccordionItem value="item-1" className="border-b-0">
             <AccordionTrigger className="text-2xl font-semibold text-white py-0 hover:no-underline">
@@ -122,7 +122,12 @@ export default function HotelBookingForm() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <div className="md:grid hidden gap-4 md:grid-cols-4 md:gap-6">
+        <div className="md:grid hidden gap-4 md:grid-cols-5 md:gap-6">
+          <div className="mt-4">
+            <h2 className="text-xl font-semibold text-white ">
+              Book Your Stay:
+            </h2>
+          </div>
           {/* Check-in Date */}
           <div className="relative">
             <label className="mb-2 block text-sm font-medium text-white">
