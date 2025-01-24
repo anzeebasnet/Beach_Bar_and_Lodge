@@ -1,6 +1,6 @@
 import React from "react";
-import { Engagement, Imperial_Script, Red_Hat_Display } from "next/font/google";
-import datas from "../../../../data.json";
+import { Imperial_Script, Red_Hat_Display } from "next/font/google";
+import blogs from "../../../lib/data/blogs.json";
 import Image from "next/image";
 import { BlogType } from "../../../../types/types";
 
@@ -15,7 +15,6 @@ const red_hat_display = Red_Hat_Display({
 });
 
 const BlogSection = () => {
-  const { BlogDetails } = datas.Blogs;
   return (
     <div>
       <div className="flex flex-col gap-6 items-center justify-center sm:my-24 my-10 sm:px-8 px-4">
@@ -25,7 +24,7 @@ const BlogSection = () => {
           Blogs
         </h2>
         <div className="lg:w-[50vw] md:w-[60vw] w-full flex flex-col md:gap-10 sm:gap-6 gap-4">
-          {BlogDetails?.map((item: BlogType) => (
+          {blogs?.map((item: BlogType) => (
             <div
               key={item.id}
               className="flex flex-col sm:gap-6 gap-3 shadow-sm shadow-gray-500 sm:p-8 p-4 rounded"

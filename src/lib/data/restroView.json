@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "title": "Scenic Lakefront Paradise",
+      "image": "/assets/images/hotel_view/Lake.jpg",
+      "desc": ""
+    },
+    {
+      "id": 2,
+      "title": "Swing at Sunset",
+      "image": "/assets/images/hotel_view/swing.jpg",
+      "desc": ""
+    },
+    {
+      "id": 3,
+      "title": "Nighttime Ambiance",
+      "image": "/assets/images/hotel_view/nightView.jpg",
+      "desc": ""
+    },
+    {
+      "id": 4,
+      "title": "Tranquil Poolside Escape",
+      "image": "/assets/images/hotel_view/poolArea.jpg",
+      "desc": ""
+    },
+    {
+      "id": 5,
+      "title": "Indoor Dining Space",
+      "image": "/assets/images/hotel_view/sittingArea.jpg",
+      "desc": ""
+    },
+    {
+      "id": 6,
+      "title": "Dinner with Scenic Views",
+      "image": "/assets/images/hotel_view/dinnerWView.jpg",
+      "desc": ""
+    },
+    {
+      "id": 7,
+      "title": "Beachside Seating",
+      "image": "/assets/images/hotel_view/beachSide.jpg",
+      "desc": ""
+    },
+    {
+      "id": 8,
+      "title": "Evening Bar Glow",
+      "image": "/assets/images/hotel_view/bar.jpg",
+      "desc": ""
+    },
+    {
+      "id": 9,
+      "title": "Frontyard Serenity",
+      "image": "/assets/images/hotel_view/frontYardView.jpg",
+      "desc": ""
+    },
+    {
+      "id": 10,
+      "title": "Sunset Reflections",
+      "image": "/assets/images/hotel_view/goldenHour.jpeg",
+      "desc": ""
+    }
+  ]
