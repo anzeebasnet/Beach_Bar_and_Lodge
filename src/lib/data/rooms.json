@@ -1,21 +1,23 @@
 {
   "title": "EXPLORE ROOMS",
-  "heading": "Rooms & Suits",
+  "heading": "Rooms & Suites",
   "rooms": [
     {
       "id": 1,
       "title": "Twin Room with Lake View",
       "images": [
-        "/assets/images/rooms/room1.jpg",
-        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/frontDoorView.jpg",
+        "/assets/images/rooms/frontDoorView2.jpg",
         "/assets/images/rooms/room3.jpg"
       ],
 
       "imageAlt": "Cozy winter bedroom with snow view",
+      "discount_price": 220.0,
       "price": 240.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "The spacious twin room features air conditioning, a private entrance, a terrace with lake views as well as a private bathroom boasting a shower. The unit has 1 bed.",
+      "detailedDescription": "This tranquil twin room is designed for relaxation and comfort, offering a breathtaking lake view that’s sure to leave you feeling refreshed. The room features a private entrance and a terrace where you can unwind while enjoying the serene waters. Inside, it’s equipped with air conditioning for ultimate comfort, and the modern private bathroom comes with a shower to help you rejuvenate after a long day. The spacious interior is perfect for couples or friends traveling together. Key amenities such as a swimming pool, complimentary Wi-Fi, a fully equipped kitchen, and free parking ensure all your needs are met during your stay. Whether you’re sipping coffee on the terrace or basking in the scenic views, this room offers a peaceful retreat.",   
       "amenities": [
         "Pool",
         "Wi-Fi",
@@ -33,10 +35,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Modern hotel room with two beds",
-      "price": 180.0,
+      "discount_price": 180.0,
+      "price": 200.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "The spacious double room offers air conditioning, a private entrance, a terrace with lake views as well as a private bathroom featuring a shower. The unit offers 1 bed.",
+      "detailedDescription": "Perfect for a romantic getaway or a solo retreat, this double room combines elegance with coziness. The private terrace provides a serene spot to enjoy your morning coffee while gazing out at the glistening lake. Inside, the room boasts a plush bed, air conditioning, and a private bathroom with a modern shower. The thoughtful touches, such as heating and a socket near the bed, ensure maximum comfort and convenience. A delicious breakfast option is available, making mornings a treat. With Wi-Fi connectivity and a quiet ambiance, this room is ideal for unwinding while staying connected. Whether relaxing indoors or taking in the lake views, this room offers an unforgettable experience.",
       "amenities": [
         "Wi-Fi",
         "Heating",
@@ -54,10 +58,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Luxury suite with ocean view balcony",
-      "price": 350.0,
+      "discount_price": 350.0,
+      "price": 380.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Wake up to the sound of waves in this luxury oceanfront suite. With a private balcony overlooking the sea, it’s perfect for a romantic getaway.",
+      "detailedDescription": "Experience unparalleled luxury in this opulent oceanfront suite, where every detail has been curated for a memorable stay. Wake up to the soothing sound of waves and step onto your private balcony to enjoy uninterrupted views of the ocean. The suite’s elegant design features plush furnishings, high-end finishes, and a romantic ambiance, making it the perfect destination for couples or honeymooners. Indulge in the hot tub after a day of exploring or enjoy complimentary drinks delivered to your room. With room service available and luxurious amenities like a private balcony and ocean views, this suite is a haven of relaxation and indulgence. Whether celebrating a special occasion or simply treating yourself, this suite is the epitome of refined comfort.",
       "amenities": [
         "Ocean view",
         "Private balcony",
@@ -75,10 +81,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Rustic cabin surrounded by tall trees",
-      "price": 120.0,
+      "discount_price": 140.0,
+      "price": 170.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Unplug and reconnect with nature in this cozy rustic cabin surrounded by tall trees. A perfect retreat for adventure seekers and nature lovers.",
+      "detailedDescription": "Escape the hustle and bustle of everyday life in this charming rustic cabin nestled in the heart of the woods. Surrounded by towering trees, the cabin offers a serene and secluded atmosphere, perfect for reconnecting with nature. Inside, a warm fireplace sets the mood for cozy evenings, while the kitchenette allows you to prepare meals at your leisure. Adventure awaits just outside your door, with hiking trails that wind through the forest. The cabin is pet-friendly, so you can bring your furry friend along for the adventure. Enjoy evenings around the outdoor grill under a canopy of stars, making memories to last a lifetime. This cabin is a sanctuary for nature enthusiasts and those seeking a peaceful retreat.",
       "amenities": [
         "Fireplace",
         "Kitchenette",
@@ -96,10 +104,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Penthouse suite with stunning city skyline",
+      "discount_price": 470.0,
       "price": 500.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Experience the height of sophistication in this elegant penthouse with a panoramic view of the city skyline and luxurious interiors.",
+      "detailedDescription": "Experience the height of sophistication in this stunning penthouse, where luxury meets breathtaking city views. Perched high above the bustling streets, the penthouse offers panoramic vistas of the city skyline, best enjoyed from the rooftop access or through the floor-to-ceiling windows. Inside, the suite is designed with modern elegance, featuring a spa bath for ultimate relaxation, a private elevator for exclusive access, and concierge services to cater to your every need. Whether you’re hosting a gathering or enjoying a quiet night in, the penthouse offers an unparalleled level of comfort and privacy. It’s the ideal accommodation for business travelers, couples, or anyone looking to indulge in luxury while exploring the city.",
       "amenities": [
         "City view",
         "Private elevator",
@@ -117,10 +127,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Chalet in the mountains with snow-covered peaks",
-      "price": 275.0,
+      "discount_price": 275.0,
+      "price": 290.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Relax in this charming chalet nestled in the mountains. Perfect for ski enthusiasts or those seeking a peaceful snowy retreat.",
+      "detailedDescription": "Nestled amidst snow-capped peaks, this charming chalet offers a cozy and idyllic escape in the mountains. Designed for ski enthusiasts and nature lovers, the chalet boasts ski-in/ski-out access, making it easy to hit the slopes. Inside, you’ll find a warm fireplace that creates the perfect ambiance after a day in the snow. Relax in the hot tub as you take in the picturesque mountain scenery, or unwind with Wi-Fi and entertainment options. The chalet is fully equipped with snow gear rental, ensuring your outdoor adventures are hassle-free. Whether you’re seeking thrills on the slopes or tranquility in a winter wonderland, this retreat is the perfect blend of comfort and adventure.",
       "amenities": [
         "Ski-in/ski-out access",
         "Fireplace",
@@ -138,10 +150,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Bungalow near the beach with a hammock",
+      "discount_price": 200.0,
       "price": 220.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Step out onto white sands from this charming beachside bungalow. Relax in a hammock and enjoy the ocean breeze.",
+      "detailedDescription": "Immerse yourself in coastal charm with this delightful beachside bungalow, where the ocean is just steps away from your front door. Wake up to the sound of waves and enjoy the fresh sea breeze as you relax in a hammock on the veranda. The bungalow’s interior is cozy yet functional, featuring Wi-Fi and an outdoor shower for convenience after a day on the beach. Start your day with a complimentary breakfast and spend your afternoons lounging on white sands or exploring the nearby shoreline. This bungalow is perfect for those seeking a laid-back, sun-soaked retreat with modern amenities like beach access and serene outdoor spaces to unwind.",
       "amenities": [
         "Beach access",
         "Hammock",
@@ -159,10 +173,12 @@
         "/assets/images/rooms/room3.jpg"
       ],
       "imageAlt": "Room in a historic castle with antique furniture",
+      "discount_price": 5900.0,
       "price": 6000.0,
       "currency": "NPR",
       "priceInterval": "night",
       "description": "Stay in a piece of history. This castle room features antique furniture, medieval decor, and a unique charm.",
+      "detailedDescription": "Step back in time with a stay in this unique castle room, where history and luxury blend seamlessly. Furnished with antique decor and medieval touches, the room exudes a sense of grandeur and timeless elegance. Guests can enjoy exclusive amenities like a guided castle tour, where the history of the property comes to life, and complimentary wine to enhance the experience. The room also offers access to a library filled with ancient texts and a meticulously maintained garden for leisurely strolls. With its old-world charm and luxurious comforts, this room is perfect for history enthusiasts, romantics, or anyone seeking a one-of-a-kind experience.",
       "amenities": [
         "Antique decor",
         "Guided castle tour",

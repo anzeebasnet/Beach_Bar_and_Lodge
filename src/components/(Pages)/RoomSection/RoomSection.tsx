@@ -63,7 +63,10 @@ export default function RoomsSection() {
                   variant="ghost"
                   size="icon"
                   className="rounded-full hover:bg-slate-100"
-                  onClick={() => handleRoomClick(room)}
+                  // onClick={() => handleRoomClick(room)}
+                  onClick={() => {
+                    window.location.href = `/rooms/${room.id}`;
+                  }}
                 >
                   <ArrowRight className="h-5 w-5" />
                 </Button>
