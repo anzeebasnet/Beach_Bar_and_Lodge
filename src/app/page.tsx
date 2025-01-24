@@ -4,11 +4,11 @@ import HotelViewCarousel from "@/components/HomePage/Hotel_View_Carousel/HotelVi
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <div
-        className="bg-cover bg-center h-screen"
+        className="bg-cover bg-center h-[75vh]"
         style={{
-          backgroundImage: "url('/assets/images/hotel_view/frontYardView.jpg')",
+          backgroundImage: "url('/assets/images/hotel_view/lakeView.jpg')",
           // boxShadow: "30px 30px 10px rgb(26, 26, 240)",
         }}
       ></div>
