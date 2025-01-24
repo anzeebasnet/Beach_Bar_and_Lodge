@@ -1,0 +1,51 @@
+{
+    "TotalImages": [
+        "/assets/images/hotel_view/lakeView.jpg",
+        "/assets/images/hotel_view/nightView.jpg",
+        "/assets/images/hotel_view/bar.jpg",
+        "/assets/images/hotel_view/beachSeating.jpg",
+        "/assets/images/hotel_view/building.jpg",
+        "/assets/images/hotel_view/fountain.jpeg",
+        "/assets/images/hotel_view/diningArea.jpg",
+        "/assets/images/hotel_view/goldenHour.jpeg",
+        "/assets/images/hotel_view/frontYard.jpg",
+        "/assets/images/hotel_view/beachSide.jpg",
+        "/assets/images/hotel_view/frontYardView.jpg",
+        "/assets/images/hotel_view/poolArea.jpg",
+        "/assets/images/hotel_view/swing.jpg",
+        "/assets/images/hotel_view/wholeView.jpg",
+        "/assets/images/hotel_view/sittingArea.jpg",
+        "/assets/images/hotel_view/room.jpg",
+        "/assets/images/hotel_view/poolFront.jpg",
+        "/assets/images/hotel_view/beach.jpg",
+        "/assets/images/hotel_view/lake.jpg",
+        "/assets/images/hotel_view/dinnerWView.jpg"
+    ],
+    "View": [
+        "/assets/images/hotel_view/lakeView.jpg",
+        "/assets/images/hotel_view/nightView.jpg",
+        "/assets/images/hotel_view/beachSeating.jpg",
+        "/assets/images/hotel_view/goldenHour.jpeg",
+        "/assets/images/hotel_view/frontYard.jpg",
+        "/assets/images/hotel_view/beachSide.jpg",
+        "/assets/images/hotel_view/frontYardView.jpg",
+        "/assets/images/hotel_view/poolArea.jpg",
+        "/assets/images/hotel_view/swing.jpg",
+        "/assets/images/hotel_view/wholeView.jpg",
+        "/assets/images/hotel_view/poolFront.jpg",
+        "/assets/images/hotel_view/beach.jpg",
+        "/assets/images/hotel_view/lake.jpg"
+    ],
+    "Dining": [
+        "/assets/images/hotel_view/bar.jpg",
+        "/assets/images/hotel_view/beachSeating.jpg",
+        "/assets/images/hotel_view/diningArea.jpg",
+        "/assets/images/hotel_view/beachSide.jpg",
+        "/assets/images/hotel_view/sittingArea.jpg",
+        "/assets/images/hotel_view/dinnerWView.jpg"
+    ],
+    "Room": [
+        "/assets/images/hotel_view/diningArea.jpg",
+        "/assets/images/hotel_view/room.jpg"
+    ]
+}
