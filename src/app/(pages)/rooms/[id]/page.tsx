@@ -51,25 +51,23 @@ const page = ({ params }: { params: { id: string } }) => {
       </h1>
 
       {/*Main Image Carousel*/}
-      <div className="relative ">
-        <Carousel className="relative">
-          <CarouselContent>
-            {room.images.map((item, index: number) => (
-              <CarouselItem key={index} className="pl-0">
-                <Image
-                  src={item}
-                  alt="image"
-                  width={300}
-                  height={300}
-                  className="rounded lg:w-[80vw] sm:w-[90vw] w-[90vw] place-self-center"
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-2" />
-          <CarouselNext className="absolute right-2" />
-        </Carousel>
-      </div>
+      <Carousel className="relative">
+        <CarouselContent>
+          {room.images.map((item, index: number) => (
+            <CarouselItem key={index} className="pl-0">
+              <Image
+                src={item}
+                alt="image"
+                width={300}
+                height={300}
+                className="rounded lg:w-[80vw] sm:w-[90vw] w-[90vw] place-self-center"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-2" />
+        <CarouselNext className="absolute right-2" />
+      </Carousel>
 
       {/*Room Description*/}
       <div className="flex lg:flex-row flex-col gap-8">

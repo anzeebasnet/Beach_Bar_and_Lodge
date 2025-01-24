@@ -1,11 +1,12 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import imagesData from "@/lib/data/images.json";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Copy, X } from "lucide-react";
+import DownloadButton from "@/components/Buttons/DownloadButton";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -15,6 +16,7 @@ const poppins = Poppins({
 const page = () => {
   const [activeImage, setActiveImage] = React.useState<string>("");
   const [activeIndex, setActiveIndex] = React.useState<number | null>(null);
+  const [totalImages, setTotalImages] = React.useState<number | null>(null);
 
   const handleNextImage = () => {
     if (activeIndex !== null && imagesData.TotalImages) {
@@ -34,10 +36,66 @@ const page = () => {
     }
   };
 
-  const handleImageClick = (image: string, index: number) => {
+  const handleImageClick = (
+    image: string,
+    index: number,
+    totalImages: number
+  ) => {
     setActiveImage(image);
     setActiveIndex(index);
+    setTotalImages(totalImages);
   };
+
+  const handleCopyImage = async () => {
+    if (!activeImage) return;
+
+    try {
+      // Fetch the image as a Blob
+      const response = await fetch(activeImage);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch image: ${response.statusText}`);
+      }
+
+      const blob = await response.blob();
+
+      // Convert Blob to Data URL
+      const reader = new FileReader();
+      reader.onloadend = async () => {
+        const base64DataUrl = reader.result as string;
+
+        // Copy the Data URL to the clipboard
+        await navigator.clipboard.writeText(base64DataUrl);
+        alert("Image copied to clipboard as a Data URL!");
+      };
+      reader.readAsDataURL(blob); // Start reading the Blob
+    } catch (error) {
+      console.error("Failed to copy image:", error);
+      alert("Failed to copy image. Please try again.");
+    }
+  };
+
+  // Add keyboard event listener
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (activeImage) {
+        if (event.key === "ArrowRight") {
+          handleNextImage();
+        } else if (event.key === "ArrowLeft") {
+          handlePrevImage();
+        } else if (event.key === "Escape") {
+          setActiveImage("");
+          setActiveIndex(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Cleanup event listener when the component unmounts or activeImage changes
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeImage, activeIndex]);
 
   return (
     <div className="sm:py-12 py-6 2xl:px-32 lg:px-20 sm:px-8 px-4 flex flex-col gap-10 items-center justify-center">
@@ -48,36 +106,57 @@ const page = () => {
       </h1>
       {activeImage ? (
         <div className="z-[120] fixed top-0 left-0 w-full h-full bg-black bg-opacity-100 flex justify-center items-center">
-          <div className=" bg-white relative border-4 border-white rounded shadow-lg flex flex-col items-center">
-            <Image
-              src={activeImage}
-              alt="img"
-              height={500}
-              width={500}
-              className={
-                "h-[100vh] sm:w-[100vw] object-contain bg-black aspect-16/9 rounded"
-              }
-            />
+          <div className=" bg-black relative rounded shadow-lg flex flex-col items-center">
+            <div className="relative">
+              <Image
+                src={activeImage}
+                alt="img"
+                height={500}
+                width={500}
+                className={
+                  "h-[100vh] sm:w-[100vw] object-contain bg-black aspect-16/9 rounded"
+                }
+              />
+              <div className="absolute top-0 bg-black bg-opacity-60 w-full  px-8 py-2 flex justify-between items-center">
+                <div>
+                  {activeIndex !== null && totalImages !== null && (
+                    <p className="text-base font-medium text-white">
+                      {activeIndex + 1} / {totalImages}
+                    </p>
+                  )}
+                </div>
+                <div className="flex gap-4 justify-end items-center">
+                  <button
+                    onClick={handleCopyImage}
+                    className="text-gray-400 hover:text-white  hover:bg-gray-600 p-2 rounded-full"
+                  >
+                    <Copy />
+                  </button>
+                  <DownloadButton imageUrl={activeImage} />
+                  <button
+                    onClick={() => {
+                      setActiveImage("");
+                      setActiveIndex(null);
+                    }}
+                    className="rounded-full w-10 h-10 font-medium text-xl flex items-center justify-center text-gray-400 hover:text-white  hover:bg-gray-600"
+                  >
+                    <X className="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <button
               onClick={handlePrevImage}
-              className="bg-gray-200 absolute top-[50vh] left-10 px-4 py-2 rounded hover:bg-gray-300 text-black"
+              className="bg-gray-200 absolute top-[50vh] left-10 p-2 rounded-full hover:bg-gray-300 text-black"
             >
               <ChevronLeft />
             </button>
             <button
               onClick={handleNextImage}
-              className="bg-gray-200 absolute top-[50vh] right-10 px-4 py-2 rounded hover:bg-gray-300"
+              className="bg-gray-200 absolute top-[50vh] right-10 p-2 rounded-full hover:bg-gray-300"
             >
               <ChevronRight />
-            </button>
-            <button
-              onClick={() => {
-                setActiveImage("");
-                setActiveIndex(null);
-              }}
-              className="absolute top-2 right-2 bg-white  rounded-full w-10 h-10 font-medium text-xl flex items-center justify-center"
-            >
-              <X />
             </button>
           </div>
         </div>
@@ -114,6 +193,13 @@ const page = () => {
             >
               Rooms
             </TabsTrigger>
+            <p>/</p>
+            <TabsTrigger
+              value="food"
+              className="text-base data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-none data-[state=active]:underline data-[state=active]:underline-offset-[12px] hover:underline hover:underline-offset-[12px] "
+            >
+              Food
+            </TabsTrigger>
           </TabsList>
           <TabsContent
             value="all"
@@ -127,7 +213,9 @@ const page = () => {
                   width={400}
                   height={400}
                   className="w-[20vw] h-[20vw]"
-                  onClick={() => handleImageClick(item, index)}
+                  onClick={() =>
+                    handleImageClick(item, index, imagesData.TotalImages.length)
+                  }
                 />
               </div>
             ))}
@@ -144,7 +232,9 @@ const page = () => {
                   width={400}
                   height={400}
                   className="w-[20vw] h-[20vw]"
-                  onClick={() => handleImageClick(item, index)}
+                  onClick={() =>
+                    handleImageClick(item, index, imagesData.View.length)
+                  }
                 />
               </div>
             ))}
@@ -161,7 +251,9 @@ const page = () => {
                   width={400}
                   height={400}
                   className="w-[20vw] h-[20vw]"
-                  onClick={() => handleImageClick(item, index)}
+                  onClick={() =>
+                    handleImageClick(item, index, imagesData.Dining.length)
+                  }
                 />
               </div>
             ))}
@@ -178,11 +270,32 @@ const page = () => {
                   width={400}
                   height={400}
                   className="w-[20vw] h-[20vw]"
-                  onClick={() => handleImageClick(item, index)}
+                  onClick={() =>
+                    handleImageClick(item, index, imagesData.Room.length)
+                  }
                 />
               </div>
             ))}
           </TabsContent>
+          <TabsContent
+            value="food"
+            className="flex flex-wrap gap-1 items-center justify-center"
+          >
+            {imagesData.Food?.map((item, index) => (
+              <div>
+                <Image
+                  src={item}
+                  alt="image"
+                  width={400}
+                  height={400}
+                  className="w-[20vw] h-[20vw]"
+                  onClick={() =>
+                    handleImageClick(item, index, imagesData.Food.length)
+                  }
+                />
+              </div>
+            ))}
+          </TabsContent>{" "}
         </Tabs>
       </div>
     </div>
