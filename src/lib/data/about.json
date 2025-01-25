@@ -1,0 +1,36 @@
+{
+  "heroSection": {
+    "title": "Welcome to Beach Lodge",
+    "description": "Escape to the pristine beauty of the Nilgiri Mountains, green hills, and village life. Situated Resort is the perfect place to discover the tranquil tales of Nepal's rural life activities. From a private veranda overlooking the lakes, feel stress-relieved gentle mountain paradise on the hilltop in the middle of nature."
+  },
+  "ourStorySection": {
+    "title": "Our Story",
+    "description": "Nestled along the serene shores of Fewa Lake in Pokhara, Beach Bar & Lodge offers guests a unique blend of tropical vibes and tranquil lakeside views. Overlooking the waters off the coast of Khapaudi, this lodge provides an idyllic escape for those seeking relaxation and adventure. With comfortable rooms, delectable food, and refreshing drinks, visitors can immerse themselves in the natural beauty of Nepal. The lodge frequently hosts special events, such as Ladies Night on Wednesdays, offering free cocktails to female guests. Recently, they celebrated New Year's Eve with a spectacular dinner, creating unforgettable memories for attendees. Whether you're looking to unwind by the lake or explore the vibrant culture of Pokhara, Beach Bar & Lodge serves as the perfect gateway to an unforgettable experience."
+  },
+  "atResortSection": {
+    "title": "At Lodge",
+    "description": "Splendid View of Hills & Lakes",
+    "images": [
+      "/assets/images/hotel_view/View/beachSeating.jpg",
+      "/assets/images/hotel_view/View/beachView.jpg",
+      "/assets/images/hotel_view/View/LakeView.jpg",
+      "/assets/images/hotel_view/View/Lake.jpg"
+    ]
+  },
+  "nearbyResortSection": {
+    "title": "Nearby Resort",
+    "description": "Tal Barahi Temple is 3.8 km from the accommodation, while Shree Bindhyabasini Temple is 7.7 km from the property. Pokhara Airport is 6 km away, and the property offers a paid airport shuttle service.",
+    "images": [
+      "/assets/images/hotel_view/View/poolArea.jpg",
+      "/assets/images/hotel_view/View/poolSide.jpg",
+      " /assets/images/hotel_view/View/swing.jpg",
+      " /assets/images/hotel_view/View/nightView.jpg",
+      " /assets/images/hotel_view/View/building.jpg"
+    ]
+  },
+  "shuttleServiceSection": {
+    "title": "Shuttle Service",
+    "subtitle": "Regular transfer service",
+    "description": "The hotel will provide guests with air-conditioned rooms with a desk, a kettle, a safety deposit box, a flat-screen TV, a balcony and a private bathroom with a bidet. The units feature a wardrobe."
+  }
+}

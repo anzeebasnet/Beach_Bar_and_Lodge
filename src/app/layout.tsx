@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
+import { Dancing_Script, Inter } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MainNav } from "@/components/HomePage/Navbar/Main_Nav";
 import NextTopLoader from "nextjs-toploader";
+import Footer from "@/components/HomePage/Footer/Footer";
 
 const inter = Inter({
   variable: "--font-inter", // Use the variable you want
@@ -27,6 +28,7 @@ export default function RootLayout({
           <MainNav />
           <NextTopLoader color="#fdfefc" showSpinner={false} />
           {children}
+          <Footer />
         </ScrollArea>
       </body>
     </html>

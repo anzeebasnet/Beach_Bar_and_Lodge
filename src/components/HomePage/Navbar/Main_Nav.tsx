@@ -57,14 +57,16 @@ export function MainNav() {
               </div>
 
               {/* Book Now Button */}
-              <div className="hidden md:block">
-                <Button
-                  variant="secondary"
-                  className="bg-black text-white hover:bg-gray-900"
-                >
-                  BOOK NOW
-                </Button>
-              </div>
+              <Link href="/book_now">
+                <div className="hidden md:block">
+                  <Button
+                    variant="secondary"
+                    className="bg-black text-white hover:bg-gray-900"
+                  >
+                    BOOK NOW
+                  </Button>
+                </div>
+              </Link>
 
               {/* Mobile Navigation */}
               <div className="md:hidden">
@@ -115,8 +117,6 @@ export function MainNav() {
             </div>
           </div>
         </nav>
-        {/* Booking Widget */}
-        <BookingWidget />
       </div>
     </>
   );

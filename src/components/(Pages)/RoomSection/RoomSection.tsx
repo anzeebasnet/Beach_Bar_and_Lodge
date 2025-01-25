@@ -22,7 +22,7 @@ export default function RoomsSection() {
   return (
     <section className="container mx-auto px-4 py-10 ">
       <div className="text-center mb-12">
-        <p className="text-sm uppercase tracking-wider mb-4 text-muted-foreground">
+        <p className="text-sm uppercase tracking-wider mb-4 text-muted-foreground ">
           {roomsData.title}
         </p>
         <h2 className="text-3xl md:text-5xl font-bold text-[#0a2342]">
