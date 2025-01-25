@@ -13,8 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
-import BookingWidget from "../Booking_Widget/BookingWidget";
-// import { VisuallyHidden } from "@/components/ui/visually-hidden";
+
 export function MainNav() {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -115,8 +114,6 @@ export function MainNav() {
             </div>
           </div>
         </nav>
-        {/* Booking Widget */}
-        {/* <BookingWidget /> */}
       </div>
     </>
   );

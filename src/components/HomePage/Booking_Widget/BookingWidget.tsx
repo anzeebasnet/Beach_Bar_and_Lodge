@@ -27,12 +27,10 @@ export default function BookingWidget() {
   return (
     <div className="border-t border-gray-500 bg-primary p-4 md:p-6">
       <div className="mx-auto max-w-6xl ">
-        <h2 className="text-xl font-semibold text-white  md:block hidden">
+        {/* <h2 className="text-xl font-semibold text-white  md:block hidden">
           Book online
-        </h2>
-        <span className="text-white text-xs">
-          Get your guaranteed accommodation RIGHT NOW!
-        </span>
+        </h2> */}
+
         <Accordion type="single" className="md:hidden block" collapsible>
           <AccordionItem value="item-1" className="border-b-0">
             <AccordionTrigger className="text-xl font-semibold text-white py-0 hover:no-underline">
@@ -126,11 +124,12 @@ export default function BookingWidget() {
           </AccordionItem>
         </Accordion>
         <div className="md:grid hidden gap-4 md:grid-cols-5 md:gap-6">
-          {/* <div className="mt-4">
-            <h2 className="text-xl font-semibold text-white ">
-              Book Your Stay:
-            </h2>
-          </div> */}
+          <div className="mt-4">
+            <h2 className="text-xl font-semibold text-white ">Book Online</h2>
+            <span className="text-sm text-yellow-500">
+              Best price guaranteed!!
+            </span>
+          </div>
           {/* Check-in Date */}
           <div className="relative">
             <label className="mb-2 block text-sm font-medium text-white">

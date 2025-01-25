@@ -6,6 +6,7 @@ import BookingWidget from "@/components/HomePage/Booking_Widget/BookingWidget";
 export default function Home() {
   return (
     <div>
+      <BookingWidget />
       <div
         className="bg-cover bg-center h-[75vh]"
         style={{
@@ -13,7 +14,6 @@ export default function Home() {
           // boxShadow: "30px 30px 10px rgb(26, 26, 240)",
         }}
       ></div>
-      <BookingWidget />
 
       <HotelViewCarousel />
       <BlogSection />

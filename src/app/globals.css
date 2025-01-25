@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-}
-
-h1 {
-  font-family: "Open Sans", serif;
-}
-
-p {
-  font-family: sans-serif;
-}
-
-span {
-  font-family: "Courier New", monospace;
-}
-
 :root {
   --resort-green: #2c5530;
 }
