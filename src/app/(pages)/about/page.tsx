@@ -1,3 +1,4 @@
+"use client";
 import { Imperial_Script, Red_Hat_Display } from "next/font/google";
 import {
   Carousel,
@@ -8,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import aboutData from "@/lib/data/about.json";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const imperialScript = Imperial_Script({
   weight: ["400"],
@@ -18,8 +20,32 @@ const red_hat_display = Red_Hat_Display({
   weight: ["400"],
   subsets: ["latin"],
 });
+const heroData = [
+  {
+    image: "/assets/images/hotel_view/View/lakeView.jpg",
+    title: "Tranquility by the Lake",
+  },
+  {
+    image: "/assets/images/hotel_view/View/beach.jpg",
+    title: "Breathtaking Mountain Peaks",
+  },
+  {
+    image: "/assets/images/hotel_view/View/frontYardView.jpg",
+    title: "Luxury and Serenity Combined",
+  },
+];
 
 export default function Page() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroData.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentHero = heroData[currentIndex];
   const {
     heroSection,
     ourStorySection,
@@ -31,19 +57,22 @@ export default function Page() {
   return (
     <main className={`${red_hat_display.className}`}>
       <section className="relative w-full overflow-hidden h-[75vh]">
+        {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-500"
           style={{
-            backgroundImage: `url('/assets/images/hotel_view/View/lakeView.jpg')`,
+            backgroundImage: `url('${currentHero.image}')`,
           }}
         >
           <div className="absolute inset-0 hero-overlay" />
         </div>
+
+        {/* Content */}
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
           <h1
-            className={`${imperialScript.className} font-semibold sm:text-8xl text-6xl text-white`}
+            className={`${imperialScript.className} font-semibold sm:text-8xl text-6xl text-white transition-all duration-500`}
           >
-            {heroSection.title}
+            {currentHero.title}
           </h1>
           <Button className="mt-8 px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-md text-lg transition-all duration-300">
             Book Now
