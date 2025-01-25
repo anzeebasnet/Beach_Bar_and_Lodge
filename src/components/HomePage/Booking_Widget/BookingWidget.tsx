@@ -20,19 +20,22 @@ import { format } from "date-fns";
 import GuestSelector from "../Guest_Selector/GuestSelector";
 import Link from "next/link";
 
-export default function HotelBookingForm() {
+export default function BookingWidget() {
   const [checkIn, setCheckIn] = useState<Date>();
   const [checkOut, setCheckOut] = useState<Date>();
 
   return (
     <div className="border-t border-gray-500 bg-primary p-4 md:p-6">
       <div className="mx-auto max-w-6xl ">
-        {/* <h2 className="text-xl font-semibold text-white mb-4 md:block hidden">
-          Book Your Stay
-        </h2> */}
+        <h2 className="text-xl font-semibold text-white  md:block hidden">
+          Book online
+        </h2>
+        <span className="text-white text-xs">
+          Get your guaranteed accommodation RIGHT NOW!
+        </span>
         <Accordion type="single" className="md:hidden block" collapsible>
           <AccordionItem value="item-1" className="border-b-0">
-            <AccordionTrigger className="text-2xl font-semibold text-white py-0 hover:no-underline">
+            <AccordionTrigger className="text-xl font-semibold text-white py-0 hover:no-underline">
               Book Your Stay
             </AccordionTrigger>
             <AccordionContent className="mt-6">
@@ -123,11 +126,11 @@ export default function HotelBookingForm() {
           </AccordionItem>
         </Accordion>
         <div className="md:grid hidden gap-4 md:grid-cols-5 md:gap-6">
-          <div className="mt-4">
+          {/* <div className="mt-4">
             <h2 className="text-xl font-semibold text-white ">
               Book Your Stay:
             </h2>
-          </div>
+          </div> */}
           {/* Check-in Date */}
           <div className="relative">
             <label className="mb-2 block text-sm font-medium text-white">

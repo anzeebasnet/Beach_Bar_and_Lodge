@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Dancing_Script, Inter } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import { ScrollArea } from "@/components/ui/scroll-area";

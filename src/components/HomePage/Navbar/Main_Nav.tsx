@@ -116,7 +116,7 @@ export function MainNav() {
           </div>
         </nav>
         {/* Booking Widget */}
-        <BookingWidget />
+        {/* <BookingWidget /> */}
       </div>
     </>
   );
