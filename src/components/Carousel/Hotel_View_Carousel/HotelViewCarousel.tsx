@@ -45,7 +45,7 @@ const HotelViewCarousel = () => {
               {restroView?.map((item: CardType) => (
                 <CarouselItem
                   key={item.id}
-                  className="pl-4 mr-4 sm:basis-1/2 md:basis-1/3 xl:basis-1/4 flex justify-center items-center md:static"
+                  className="pl-4 mr-4 sm:basis-1/2 md:basis-1/3 xl:basis-1/4 flex justify-start items-start md:static"
                 >
                   <div className="flex flex-col items-center justify-center gap-6">
                     <Image
@@ -55,13 +55,17 @@ const HotelViewCarousel = () => {
                       height={300}
                       className="w-96 h-72 rounded-3xl transition-transform duration-300 transform hover:scale-105"
                     />
-                    <div>
+                    <div className="text-center flex flex-col gap-2">
                       <h2
-                        className={`${red_hat_display.className} text-xl font-semibold text-primary`}
+                        className={`${tangerine.className} text-4xl font-semibold text-primary`}
                       >
                         {item.title}
                       </h2>
-                      <p>{item.desc}</p>
+                      <p
+                        className={`${red_hat_display.className} text-sm font-medium text-black sm:px-4 px-6`}
+                      >
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
                 </CarouselItem>
