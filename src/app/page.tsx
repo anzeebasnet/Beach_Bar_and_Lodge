@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <BookingWidget />
       <div
-        className="bg-cover bg-center h-[75vh]"
+        className="bg-cover bg-center h-[calc(100vh-10rem)]"
         style={{
           backgroundImage: "url('/assets/images/hotel_view/View/lakeView.jpg')",
           // boxShadow: "30px 30px 10px rgb(26, 26, 240)",
