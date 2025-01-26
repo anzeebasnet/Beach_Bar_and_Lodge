@@ -248,7 +248,10 @@ const page = () => {
                 value="item-1"
                 className="flex flex-col items-center justify-center h-full border-none"
               >
-                <AccordionTrigger className="border border-gray-300 flex-none capitalize text-lg font-medium text-center px-2 py-1 rounded">
+                <AccordionTrigger
+                  iconClassName="text-black"
+                  className="border border-gray-300 text-black flex-none capitalize text-lg font-medium text-center px-2 py-1 rounded"
+                >
                   {selectedTab}
                 </AccordionTrigger>
                 <AccordionContent className="h-max max-h-[300px] w-[80vw] overflow-auto p-2 mt-4 bg-muted rounded">

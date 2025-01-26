@@ -33,7 +33,10 @@ export default function BookingWidget() {
 
         <Accordion type="single" className="md:hidden block" collapsible>
           <AccordionItem value="item-1" className="border-b-0">
-            <AccordionTrigger className="text-xl font-semibold text-white py-0 hover:no-underline">
+            <AccordionTrigger
+              iconClassName="text-white"
+              className="text-xl font-semibold text-white py-0 hover:no-underline"
+            >
               Book Your Stay
             </AccordionTrigger>
             <AccordionContent className="mt-6">
