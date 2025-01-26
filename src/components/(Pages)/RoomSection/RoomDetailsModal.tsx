@@ -72,7 +72,7 @@ export function RoomDetailsModal({
                   <div key={index} className="flex-[0_0_100%] min-w-0">
                     <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
                       <Image
-                        src={image || "/assets/images/room.jpg"}
+                        src={image || "/assets/images/rooms/room1.jpg"}
                         alt={`${room.title} - Image ${index + 1}`}
                         fill
                         className="object-cover"

@@ -41,7 +41,7 @@ export default function RoomsSection() {
                 src={
                   room.images && room.images.length > 0
                     ? room.images[0]
-                    : "/assets/images/room.jpg"
+                    : "/assets/images/rooms/room1.jpg"
                 }
                 alt={`${room.title} - Main Image`}
                 fill

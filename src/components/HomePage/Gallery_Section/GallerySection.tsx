@@ -37,12 +37,12 @@ const GallerySection = () => {
       <div className="grid md:grid-cols-5 grid-cols-1 md:gap-3 md:gap-y-0 gap-y-4 justify-center items-start my-24">
         <div className="col-span-2 md:place-self-end place-self-center">
           <Image
-            src={"/assets/images/hotel_view/building.jpg"}
+            src={"/assets/images/hotel_view/View/building.jpg"}
             alt="building"
             width={700}
             height={1500}
             onClick={() => {
-              setActiveImage("/assets/images/hotel_view/building.jpg");
+              setActiveImage("/assets/images/hotel_view/View/building.jpg");
             }}
             className="md:w-[35vw] w-[100vw] md:h-[93vh]"
           />
@@ -50,66 +50,72 @@ const GallerySection = () => {
         <div className="flex flex-col gap-3 col-span-3 items-center justify-center">
           <div className="flex sm:flex-row flex-col gap-3 md:place-self-start place-self-center">
             <Image
-              src={"/assets/images/hotel_view/beach.jpg"}
+              src={"/assets/images/hotel_view/View/beach.jpg"}
               alt="wholeView"
               width={400}
               height={400}
               onClick={() => {
-                setActiveImage("/assets/images/hotel_view/beach.jpg");
+                setActiveImage("/assets/images/hotel_view/View/beach.jpg");
               }}
               className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
             />
             <Image
-              src={"/assets/images/hotel_view/dinnerWView.jpg"}
+              src={"/assets/images/hotel_view/Dining/dinnerWView.jpg"}
               alt="wholeView"
               width={400}
               height={400}
               onClick={() => {
-                setActiveImage("/assets/images/hotel_view/dinnerWView.jpg");
-              }}
-              className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
-            />
-          </div>
-          <div className="flex sm:flex-row flex-col gap-3 md:place-self-start place-self-center">
-            <Image
-              src={"/assets/images/hotel_view/lakeView.jpg"}
-              alt="wholeView"
-              width={400}
-              height={400}
-              onClick={() => {
-                setActiveImage("/assets/images/hotel_view/lakeView.jpg");
-              }}
-              className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
-            />
-            <Image
-              src={"/assets/images/hotel_view/poolNightView.jpg"}
-              alt="wholeView"
-              width={400}
-              height={400}
-              onClick={() => {
-                setActiveImage("/assets/images/hotel_view/poolNightView.jpg");
+                setActiveImage(
+                  "/assets/images/hotel_view/Dining/dinnerWView.jpg"
+                );
               }}
               className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
             />
           </div>
           <div className="flex sm:flex-row flex-col gap-3 md:place-self-start place-self-center">
             <Image
-              src={"/assets/images/hotel_view/frontYardView.jpg"}
+              src={"/assets/images/hotel_view/View/lakeView.jpg"}
               alt="wholeView"
               width={400}
               height={400}
               onClick={() => {
-                setActiveImage("/assets/images/hotel_view/frontYardView.jpg");
+                setActiveImage("/assets/images/hotel_view/View/lakeView.jpg");
               }}
               className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
             />
             <Image
-              src={"/assets/images/hotel_view/frontYard.jpg"}
+              src={"/assets/images/hotel_view/View/poolNightView.jpg"}
               alt="wholeView"
               width={400}
               height={400}
               onClick={() => {
-                setActiveImage("/assets/images/hotel_view/frontYard.jpg");
+                setActiveImage(
+                  "/assets/images/hotel_view/View/poolNightView.jpg"
+                );
+              }}
+              className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
+            />
+          </div>
+          <div className="flex sm:flex-row flex-col gap-3 md:place-self-start place-self-center">
+            <Image
+              src={"/assets/images/hotel_view/View/frontYardView.jpg"}
+              alt="wholeView"
+              width={400}
+              height={400}
+              onClick={() => {
+                setActiveImage(
+                  "/assets/images/hotel_view/View/frontYardView.jpg"
+                );
+              }}
+              className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
+            />
+            <Image
+              src={"/assets/images/hotel_view/View/frontYard.jpg"}
+              alt="wholeView"
+              width={400}
+              height={400}
+              onClick={() => {
+                setActiveImage("/assets/images/hotel_view/View/frontYard.jpg");
               }}
               className="md:w-[26vw] sm:w-[46vw] w-[95vw] h-full sm:h-[30vh]"
             />
