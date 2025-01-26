@@ -2,61 +2,61 @@
     {
       "id": 1,
       "title": "Scenic Lakefront Paradise",
-      "image": "/assets/images/hotel_view/Lake.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/Lake.jpg",
+      "desc": "Experience the tranquility of a beautiful lakefront, where the calm waters reflect the serene surroundings."
     },
     {
       "id": 2,
       "title": "Swing at Sunset",
-      "image": "/assets/images/hotel_view/swing.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/swing.jpg",
+      "desc": "Relax on a swing as the sun sets, casting a warm glow over the peaceful horizon."
     },
     {
       "id": 3,
       "title": "Nighttime Ambiance",
-      "image": "/assets/images/hotel_view/nightView.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/nightView.jpg",
+      "desc": "The night comes alive with a gentle ambiance, as the lights reflect off the landscape, creating a serene atmosphere."
     },
     {
       "id": 4,
       "title": "Tranquil Poolside Escape",
-      "image": "/assets/images/hotel_view/poolArea.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/poolArea.jpg",
+      "desc": "Unwind beside the pool, surrounded by lush greenery and the soothing sounds of water."
     },
     {
       "id": 5,
       "title": "Indoor Dining Space",
-      "image": "/assets/images/hotel_view/sittingArea.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/Dining/sittingArea.jpg",
+      "desc": "Enjoy a cozy and elegant dining experience in a welcoming indoor space, perfect for intimate gatherings."
     },
     {
       "id": 6,
       "title": "Dinner with Scenic Views",
-      "image": "/assets/images/hotel_view/dinnerWView.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/Dining/dinnerWView.jpg",
+      "desc": "Indulge in a delicious meal while taking in panoramic views that create the perfect backdrop."
     },
     {
       "id": 7,
       "title": "Beachside Seating",
-      "image": "/assets/images/hotel_view/beachSide.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/beachSide.jpg",
+      "desc": "Relax on comfortable seating by the beach, where the waves gently kiss the shore and the breeze fills the air."
     },
     {
       "id": 8,
       "title": "Evening Bar Glow",
-      "image": "/assets/images/hotel_view/bar.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/bar.jpg",
+      "desc": "Unwind with a drink at the bar, bathed in the soft glow of evening lights that set a perfect mood."
     },
     {
       "id": 9,
       "title": "Frontyard Serenity",
-      "image": "/assets/images/hotel_view/frontYardView.jpg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/frontYardView.jpg",
+      "desc": "Take a moment to enjoy the serenity of the frontyard, where peace and nature coexist in harmony."
     },
     {
       "id": 10,
       "title": "Sunset Reflections",
-      "image": "/assets/images/hotel_view/goldenHour.jpeg",
-      "desc": ""
+      "image": "/assets/images/hotel_view/View/goldenHour.jpeg",
+      "desc": "Witness the stunning beauty of the sunset, as the vibrant colors reflect on the water, creating a breathtaking scene."
     }
   ]
