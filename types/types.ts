@@ -31,3 +31,11 @@ export type RoomsData = {
   heading: string;
   rooms: RoomType[];
 };
+
+export type RoomCardType = {
+  images: string[];
+  icon: string;
+  title: string;
+  description: string[];
+  orientation?: "left" | "right";
+};
