@@ -15,11 +15,6 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
-
 const imperialScript = Imperial_Script({
   weight: ["400"],
   subsets: ["latin"],
