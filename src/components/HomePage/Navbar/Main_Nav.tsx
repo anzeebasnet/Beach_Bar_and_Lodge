@@ -29,7 +29,7 @@ export function MainNav() {
 
   const navLinks = [
     { href: "/rooms", label: "Our Rooms" },
-    { href: "/packages", label: "Packages" },
+    // { href: "/packages", label: "Packages" },
     { href: "/gallery", label: "Gallery" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
