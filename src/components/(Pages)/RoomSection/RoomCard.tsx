@@ -11,6 +11,7 @@ import {
   Merriweather,
   Montserrat,
   Poppins,
+  Red_Hat_Display,
 } from "next/font/google";
 
 type RoomCardProps = {
@@ -33,6 +34,11 @@ const poppins = Poppins({
 });
 
 const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const redhatdisplay = Red_Hat_Display({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -113,11 +119,11 @@ const RoomCard: React.FC<RoomCardProps> = ({
             ))}
           </div>
           <div
-            className={`${montserrat.className} ${
+            className={`${redhatdisplay.className} ${
               isLeft
                 ? "lg:justify-start lg:items-start lg:text-left"
                 : "lg:justify-end lg:items-end lg:text-right"
-            } text-gray-600 sm:text-sm text-[13px] mt-4 flex flex-col items-start justify-start sm:gap-4 gap-2`}
+            } custom-paragraph mt-4 flex flex-col items-start justify-start sm:gap-4 gap-2`}
           >
             {description.map((desc, index) => (
               <p key={index}>{desc}</p>

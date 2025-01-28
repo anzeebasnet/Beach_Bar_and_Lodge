@@ -53,7 +53,7 @@ const BlogSection = () => {
                 {item.title}
               </h2>
               <p
-                className={`${red_hat_display.className} sm:text-base text-sm text-black sm:leading-7`}
+                className={`${red_hat_display.className} custom-paragraph leading-7`}
               >
                 {expanded[item.id]
                   ? item.desc

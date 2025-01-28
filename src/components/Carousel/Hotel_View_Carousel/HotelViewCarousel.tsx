@@ -12,7 +12,6 @@ import {
   Imperial_Script,
   Montserrat,
   Red_Hat_Display,
-  Tangerine,
 } from "next/font/google";
 import { CardType } from "../../../../types/types";
 import Image from "next/image";
@@ -93,16 +92,10 @@ const HotelViewCarousel = () => {
 
   return (
     <div>
-      <div className="flex flex-col sm:gap-16 gap-7 items-center justify-center sm:my-16 my-10">
-        <div className="flex flex-col items-center justify-center gap-2">
-          <h2
-            className={`${imperialScript.className} font-semibold sm:text-8xl text-6xl text-black`}
-          >
-            Welcome
-          </h2>
-          <p
-            className={`${montserrat.className} sm:text-lg text-sm font-medium text-gray-500`}
-          >
+      <div className="flex flex-col sm:gap-16 gap-7 items-center justify-center my-6">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className={`${imperialScript.className} custom-h2`}>Welcome</h2>
+          <p className={`${montserrat.className} custom-text`}>
             Tropical Vibes to Unwind and Relax
           </p>
         </div>

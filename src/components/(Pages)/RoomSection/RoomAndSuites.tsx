@@ -56,14 +56,8 @@ export default function RoomsPage() {
       </div>
       <div className="flex flex-col sm:gap-16 gap-7 items-center justify-center sm:my-16 my-10 px-8">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h2
-            className={`${imperialScript.className} font-semibold sm:text-8xl text-6xl text-primary`}
-          >
-            Our Rooms
-          </h2>
-          <p
-            className={`${montserrat.className} sm:text-lg text-sm font-medium text-gray-500`}
-          >
+          <h2 className={`${imperialScript.className} custom-h2`}>Our Rooms</h2>
+          <p className={`${montserrat.className} custom-text`}>
             Elegant and Sophisticated Retreats
           </p>
         </div>

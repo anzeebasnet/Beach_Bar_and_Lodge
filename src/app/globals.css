@@ -15,6 +15,44 @@
     transparent
   );
 }
+.custom-h2 {
+  font-weight: 600; 
+  font-size: 3rem; 
+  color: #2c5530;
+}
+
+@media (min-width: 640px) {
+  .custom-h2 {
+    font-size: 6rem; 
+  }
+}
+
+.custom-text {
+  font-size: 0.875rem; 
+  font-weight: 500; 
+  color: #6b7280;
+  margin-top: -0.5rem; 
+
+}
+
+@media (min-width: 640px) {
+  .custom-text {
+    font-size: 1.125rem; 
+    margin-top: -1.5rem; 
+  }
+}
+
+.custom-paragraph {
+  font-size: 0.875rem;
+  color: #383839;
+}
+
+@media (min-width: 640px) { 
+  .custom-paragraph {
+    font-size: 1rem;
+  }
+}
+
 
 img {
   max-width: 100%;

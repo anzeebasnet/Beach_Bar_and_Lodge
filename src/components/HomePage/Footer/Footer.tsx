@@ -41,14 +41,8 @@ export default function Footer() {
     <main className={`${red_hat_display.className} min-h-screen flex flex-col`}>
       {/* Header Section */}
       <section className="text-center py-4 md:py-8">
-        <h1
-          className={`${imperialScript.className} text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2`}
-        >
-          Reach Us
-        </h1>
-        <p className="text-gray-600 text-sm md:text-base">
-          Let's Get you to Beach Bar and Lodge
-        </p>
+        <h2 className={`${imperialScript.className} custom-h2`}>Reach Us</h2>
+        <p className="custom-text">Let's Get you to Beach Bar and Lodge</p>
       </section>
 
       {/* Map and Travel Details Section */}

@@ -3,7 +3,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { Imperial_Script, Poppins, Red_Hat_Display } from "next/font/google";
+import {
+  Imperial_Script,
+  Montserrat,
+  Poppins,
+  Red_Hat_Display,
+} from "next/font/google";
 import imagesData from "@/lib/data/images.json";
 import { ChevronDown, ChevronLeft, ChevronRight, Copy, X } from "lucide-react";
 import DownloadButton from "@/components/Buttons/DownloadButton";
@@ -21,6 +26,11 @@ const imperialScript = Imperial_Script({
 });
 
 const red_hat_display = Red_Hat_Display({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
   weight: ["400"],
   subsets: ["latin"],
 });
@@ -133,11 +143,14 @@ const page = () => {
         </Button>
       </div>
       <div className="sm:py-12 py-6 2xl:px-32 lg:px-20 sm:px-8 px-4 flex flex-col gap-10 items-center justify-center">
-        <h1
-          className={`${imperialScript.className} sm:text-6xl text-4xl font-extrabold text-primary`}
-        >
-          Our Gallery
-        </h1>
+        <div className="flex flex-col items-center justify-center sm:gap-4 gap-2">
+          <h1 className={`${imperialScript.className} custom-h2`}>
+            Our Gallery
+          </h1>
+          <p className={`${montserrat.className} custom-text`}>
+            Step into the Serenity of Nature
+          </p>
+        </div>
         {activeImage ? (
           <div className="z-[120] fixed top-0 left-0 w-full h-full bg-black bg-opacity-100 flex justify-center items-center">
             <div className=" bg-black relative rounded shadow-lg flex flex-col items-center">
