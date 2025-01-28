@@ -1,5 +1,5 @@
 "use client";
-import { Imperial_Script, Red_Hat_Display } from "next/font/google";
+import { Imperial_Script, Montserrat, Red_Hat_Display } from "next/font/google";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +10,7 @@ import {
 import aboutData from "@/lib/data/about.json";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const imperialScript = Imperial_Script({
   weight: ["400"],
@@ -20,6 +21,12 @@ const red_hat_display = Red_Hat_Display({
   weight: ["400"],
   subsets: ["latin"],
 });
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
 const heroData = [
   {
     image: "/assets/images/hotel_view/View/lakeView.jpg",
@@ -74,19 +81,17 @@ export default function Page() {
           >
             {currentHero.title}
           </h1>
-          <Button className="mt-8 px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-md text-lg transition-all duration-300">
+          <Link href={"/booking"} className="custom-button">
             Book Now
-          </Button>
+          </Link>
         </div>
       </section>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h1
-          className={`${imperialScript.className} text-[#2C5530] text-5xl md:text-6xl mb-8`}
-        >
+        <h1 className={`${imperialScript.className} custom-h2`}>
           {ourStorySection.title}
         </h1>
-        <p className="text-gray-700 max-w-4xl mx-auto ">
+        <p className="custom-paragraph leading-7 max-w-4xl mx-auto ">
           {ourStorySection.description}
         </p>
       </section>
@@ -94,12 +99,12 @@ export default function Page() {
       {/* At Resort Section */}
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2
-            className={`${imperialScript.className} text-[#2C5530] text-4xl md:text-5xl`}
-          >
+          <h2 className={`${imperialScript.className} custom-h2`}>
             {atResortSection.title}
           </h2>
-          <p className="text-gray-600 mb-8">{atResortSection.description}</p>
+          <p className={`${montserrat.className} custom-text mb-8`}>
+            {atResortSection.description}
+          </p>
           <Carousel className="w-full max-w-6xl mx-auto">
             <CarouselContent>
               {atResortSection.images.map((src, index) => (
@@ -123,12 +128,12 @@ export default function Page() {
       {/* Nearby Resort Section */}
       <section className="py-10">
         <div className="container mx-auto px-4 text-center">
-          <h2
-            className={`${imperialScript.className} text-[#2C5530] text-4xl md:text-5xl mb-8`}
-          >
+          <h2 className={`${imperialScript.className} custom-h2`}>
             {nearbyResortSection.title}
           </h2>
-          <p className="text-gray-700 max-w-4xl mx-auto mb-16">
+          <p
+            className={`${montserrat.className} custom-text sm:text-base text-xs max-w-4xl mx-auto mb-16`}
+          >
             {nearbyResortSection.description}
           </p>
           <Carousel className="w-full max-w-6xl mx-auto">
@@ -154,13 +159,13 @@ export default function Page() {
       {/* Shuttle Service Section */}
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2
-            className={`${imperialScript.className} text-[#2C5530] text-4xl md:text-5xl mb-8`}
-          >
+          <h2 className={`${imperialScript.className} custom-h2`}>
             {shuttleServiceSection.title}
           </h2>
-          <p className="text-gray-600 mb-4">{shuttleServiceSection.subtitle}</p>
-          <p className="text-gray-700 max-w-4xl mx-auto">
+          <p className={`${montserrat.className} custom-text mb-4`}>
+            {shuttleServiceSection.subtitle}
+          </p>
+          <p className="custom-paragraph max-w-4xl mx-auto">
             {shuttleServiceSection.description}
           </p>
         </div>

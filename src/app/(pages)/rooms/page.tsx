@@ -1,10 +1,10 @@
-import RoomsSection from "@/components/(Pages)/RoomSection/RoomSection";
+import RoomAndSuites from "@/components/(Pages)/RoomSection/RoomAndSuites";
 import React from "react";
 
 const page = () => {
   return (
     <div className="">
-      <RoomsSection />
+      <RoomAndSuites />
     </div>
   );
 };

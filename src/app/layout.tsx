@@ -2,7 +2,7 @@ import { Dancing_Script, Inter } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { MainNav } from "@/components/HomePage/Navbar/Main_Nav";
+import { MainNav } from "@/components/Navbar/Main_Nav";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/HomePage/Footer/Footer";
 

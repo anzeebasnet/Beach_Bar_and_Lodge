@@ -33,7 +33,10 @@ export default function BookingWidget() {
 
         <Accordion type="single" className="md:hidden block" collapsible>
           <AccordionItem value="item-1" className="border-b-0">
-            <AccordionTrigger className="text-xl font-semibold text-white py-0 hover:no-underline">
+            <AccordionTrigger
+              iconClassName="text-white"
+              className="text-xl font-semibold text-white py-0 hover:no-underline"
+            >
               Book Your Stay
             </AccordionTrigger>
             <AccordionContent className="mt-6">
@@ -125,7 +128,9 @@ export default function BookingWidget() {
         </Accordion>
         <div className="md:grid hidden gap-4 md:grid-cols-5 md:gap-6">
           <div className="mt-4">
-            <h2 className="text-xl font-semibold text-white ">Book Online</h2>
+            <h2 className="text-xl font-semibold text-white uppercase">
+              Book Online
+            </h2>
             <span className="text-sm text-yellow-500">
               Best price guaranteed!!
             </span>
@@ -140,7 +145,7 @@ export default function BookingWidget() {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-full justify-start bg-white text-left font-normal hover:bg-white",
+                    "w-full justify-start bg-white text-left font-normal hover:bg-white rounded",
                     !checkIn && "text-muted-foreground"
                   )}
                 >
@@ -169,7 +174,7 @@ export default function BookingWidget() {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-full justify-start bg-white text-left font-normal hover:bg-white",
+                    "w-full justify-start bg-white text-left font-normal hover:bg-white rounded",
                     !checkOut && "text-muted-foreground"
                   )}
                 >
@@ -200,7 +205,7 @@ export default function BookingWidget() {
           <div className="flex items-end">
             <Link href="/rooms">
               <Button
-                className="w-full bg-green-600 text-white hover:bg-green-700"
+                className="w-full bg-green-600 text-white hover:bg-green-700 rounded"
                 size="lg"
               >
                 FIND ROOM

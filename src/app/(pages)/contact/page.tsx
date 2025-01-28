@@ -21,9 +21,7 @@ export default function Page() {
     >
       {/* Subscribe Section */}
       <section className="mb-20">
-        <h1
-          className={`${imperialScript.className} text-[#2C5530] text-center text-6xl md:text-7xl mb-8`}
-        >
+        <h1 className={`${imperialScript.className} text-center custom-h2`}>
           Subscribe
         </h1>
 
@@ -63,7 +61,7 @@ export default function Page() {
 
           <div className="md:col-span-2 flex justify-center my-4">
             <Link href="/book_now" passHref>
-              <div className="border border-gray-300 rounded p-4 w-full max-w-[304px] h-[78px] flex items-center justify-center text-gray-500">
+              <div className="border border-gray-300 rounded px-4 py-2 flex items-center justify-center text-gray-500">
                 JOIN NOW
               </div>
             </Link>
@@ -79,14 +77,10 @@ export default function Page() {
 
       {/* Contact Section */}
       <section className="text-center">
-        <h2
-          className={`${imperialScript.className} text-[#2C5530] text-6xl md:text-7xl mb-4`}
-        >
-          Contact Us
-        </h2>
-        <p className="text-gray-600 text-xl mb-12">Get In Touch With Us</p>
+        <h2 className={`${imperialScript.className} custom-h2`}>Contact Us</h2>
+        <p className="custom-text">Get In Touch With Us</p>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-10">
           {/* Resort Contact */}
           <div className="space-y-4">
             <h3 className="text-[#2C5530] text-2xl font-semibold mb-6">

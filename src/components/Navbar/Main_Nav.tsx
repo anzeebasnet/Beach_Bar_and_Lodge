@@ -29,7 +29,7 @@ export function MainNav() {
 
   const navLinks = [
     { href: "/rooms", label: "Our Rooms" },
-    { href: "/packages", label: "Packages" },
+    // { href: "/packages", label: "Packages" },
     { href: "/gallery", label: "Gallery" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
@@ -52,22 +52,22 @@ export function MainNav() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="hidden md:flex items-center lg:space-x-20 md:space-x-9">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative text-white hover:text-gray-300 transition-colors group"
+                  className="relative text-white hover:text-gray-300 text-sm transition-colors group uppercase"
                 >
                   {link.label}
                   {/* Underline */}
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
             </div>
 
             {/* Book Now Button */}
-            <Link href="/book_now">
+            <Link href="/booking">
               <div className="hidden md:block">
                 <Button
                   variant="secondary"

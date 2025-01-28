@@ -1,0 +1,44 @@
+{
+    "rooms": [
+    {
+      "images": [
+        "/assets/images/rooms/twinroom.jpg",
+        "/assets/images/rooms/room2.jpg",
+        "/assets/images/rooms/twinRoomTopView.jpg",
+        "/assets/images/rooms/room4.jpg"
+      ],
+      "icon": "/assets/images/icons/double-bed.png",
+      "title": "Twin Room with Lake View",
+      "description": [
+        "Relax in a spacious 40 m² room with a cozy single bed.",
+        "Enjoy stunning lake and landmark views from your private balcony or terrace.",
+        "Luxury Features: Bathrobe, slippers, free toiletries, and extra-long bed.",
+        "Hand sanitiser, air purifiers, carbon monoxide detector, and baby safety gates.",
+        "Comfort & Convenience: Private bathroom, flat-screen TV, air conditioning, and heating.",
+        "Functional Add-ons: Desk, seating area, electric kettle, and ironing facilities.",
+        "Additional Perks: Tile or hardwood flooring, wake-up service, and cleaning essentials."
+      ],
+      "orientation": "left"
+    },
+    {
+      "images": [
+        "/assets/images/rooms/frontDoorView.jpg",
+        "/assets/images/rooms/room1.jpg",
+        "/assets/images/rooms/room3.jpg",
+        "/assets/images/rooms/windowView.jpg"
+      ],
+      "icon": "/assets/images/icons/double-bed.png",
+      "title": "Double Room with Lake View",
+      "description": [
+        "A spacious 40 m² room with 1 extra-large double bed for ultimate comfort.",
+        "Stunning lake and landmark views from your private balcony or terrace.",
+        "Luxury Features: Bathrobe, slippers, free toiletries, and extra-long bed.",
+        "Hand sanitiser, air purifiers, carbon monoxide detector, and baby safety gates.",
+        "Comfort & Convenience: Private bathroom, flat-screen TV, air conditioning, and heating.",
+        "Functional Add-ons: Desk, seating area, electric kettle, and ironing facilities.",
+        "Additional Perks: Tile or hardwood flooring, wake-up service, and cleaning essentials."
+      ],
+      "orientation": "right"
+    }
+  ]
+}

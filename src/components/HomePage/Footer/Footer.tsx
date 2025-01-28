@@ -1,4 +1,4 @@
-import { Imperial_Script, Red_Hat_Display } from "next/font/google";
+import { Imperial_Script, Montserrat, Red_Hat_Display } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +11,11 @@ const imperialScript = Imperial_Script({
 
 const red_hat_display = Red_Hat_Display({
   weight: ["400"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -41,12 +46,8 @@ export default function Footer() {
     <main className={`${red_hat_display.className} min-h-screen flex flex-col`}>
       {/* Header Section */}
       <section className="text-center py-4 md:py-8">
-        <h1
-          className={`${imperialScript.className} text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2`}
-        >
-          Reach Us
-        </h1>
-        <p className="text-gray-600 text-sm md:text-base">
+        <h2 className={`${imperialScript.className} custom-h2`}>Reach Us</h2>
+        <p className={`${montserrat.className} custom-text`}>
           Let's Get you to Beach Bar and Lodge
         </p>
       </section>
