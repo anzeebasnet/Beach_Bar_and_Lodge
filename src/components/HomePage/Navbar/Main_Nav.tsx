@@ -67,7 +67,7 @@ export function MainNav() {
             </div>
 
             {/* Book Now Button */}
-            <Link href="/book_now">
+            <Link href="/booking">
               <div className="hidden md:block">
                 <Button
                   variant="secondary"

@@ -16,7 +16,7 @@ const red_hat_display = Red_Hat_Display({
 });
 
 const montserrat = Montserrat({
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 

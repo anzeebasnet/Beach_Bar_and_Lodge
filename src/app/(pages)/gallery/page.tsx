@@ -19,6 +19,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const imperialScript = Imperial_Script({
   weight: ["400"],
@@ -31,7 +32,7 @@ const red_hat_display = Red_Hat_Display({
 });
 
 const montserrat = Montserrat({
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -136,11 +137,12 @@ const page = () => {
           Capture <br /> Unforgettable Moments <br /> at <br /> Beach Bar &
           Lodge
         </h2>
-        <Button
-          className={`${red_hat_display.className} mt-8 px-8 py-6 bg-transparent hover:bg-primary text-white border-2 border-white rounded-md text-lg transition-all duration-300`}
+        <Link
+          href="/booking"
+          className={`${red_hat_display.className} custom-button`}
         >
           Book Now
-        </Button>
+        </Link>
       </div>
       <div className="sm:py-12 py-6 2xl:px-32 lg:px-20 sm:px-8 px-4 flex flex-col gap-10 items-center justify-center">
         <div className="flex flex-col items-center justify-center sm:gap-4 gap-2">

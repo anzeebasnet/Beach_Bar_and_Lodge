@@ -7,9 +7,10 @@ import { useState } from "react";
 import { RoomModal } from "./RoomModal";
 import roomData from "@/lib/data/suites.json";
 import { RoomCardType } from "../../../../types/types";
+import Link from "next/link";
 
 const montserrat = Montserrat({
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -48,11 +49,12 @@ export default function RoomsPage() {
           Serene escapes
           <br /> with <br /> Opulent comfort
         </p>
-        <Button
-          className={`${red_hat_display.className} mt-8 px-8 py-6 bg-transparent hover:bg-primary text-white border-2 border-white rounded-md text-lg transition-all duration-300`}
+        <Link
+          href={"/booking"}
+          className={`${red_hat_display.className} custom-button`}
         >
           Book Now
-        </Button>
+        </Link>
       </div>
       <div className="flex flex-col sm:gap-16 gap-7 items-center justify-center sm:my-16 my-10 px-8">
         <div className="flex flex-col items-center justify-center gap-2">
