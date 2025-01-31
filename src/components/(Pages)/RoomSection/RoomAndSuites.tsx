@@ -1,12 +1,11 @@
 "use client";
 
 import RoomCard from "./RoomCard";
-import { Button } from "@/components/ui/button";
 import { Imperial_Script, Montserrat, Red_Hat_Display } from "next/font/google";
 import { useState } from "react";
 import { RoomModal } from "./RoomModal";
 import roomData from "@/lib/data/suites.json";
-import { RoomCardType } from "../../../../types/types";
+import { RoomCardType } from "../../../types/types";
 import Link from "next/link";
 
 const montserrat = Montserrat({
@@ -40,7 +39,6 @@ export default function RoomsPage() {
         className="bg-cover bg-center h-[calc(100vh-4rem)] flex flex-col justify-center items-center "
         style={{
           backgroundImage: "url('/assets/images/rooms/frontDoorView.jpg')",
-          // boxShadow: "30px 30px 10px rgb(26, 26, 240)",
         }}
       >
         <p

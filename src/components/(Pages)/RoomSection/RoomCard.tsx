@@ -20,6 +20,10 @@ type RoomCardProps = {
   title: string;
   description: string[];
   orientation?: "left" | "right";
+  price: {
+    OnePerson: string;
+    TwoPerson: string;
+  };
   onDetailsClick?: () => void;
 };
 
@@ -54,6 +58,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
   title,
   description,
   orientation = "left",
+  price,
   onDetailsClick,
 }) => {
   const isLeft = orientation === "left";

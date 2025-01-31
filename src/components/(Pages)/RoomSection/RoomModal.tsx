@@ -18,6 +18,10 @@ interface RoomModalProps {
     icon: string;
     title: string;
     description: string[];
+    price: {
+      OnePerson: string;
+      TwoPerson: string;
+    };
     orientation?: "left" | "right";
     bookLink?: string;
     detailsLink?: string;
@@ -104,7 +108,7 @@ export function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
               <div>
                 <h4 className="font-semibold text-gray-800">
                   For Two Guests:{" "}
-                  <span className="text-blue-600">NPR 6,207</span>
+                  <span className="text-blue-600">{room.price.TwoPerson}</span>
                 </h4>
                 <ul className="mt-2 text-sm text-gray-600 list-disc list-inside">
                   <li>Includes taxes and charges</li>
@@ -120,7 +124,7 @@ export function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
               <div>
                 <h4 className="font-semibold text-gray-800">
                   For One Guest:{" "}
-                  <span className="text-blue-600">NPR 5,586</span>
+                  <span className="text-blue-600">{room.price.OnePerson}</span>
                 </h4>
                 <ul className="mt-2 text-sm text-gray-600 list-disc list-inside">
                   <li>Includes taxes and charges</li>

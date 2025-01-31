@@ -13,7 +13,7 @@ import {
   Montserrat,
   Red_Hat_Display,
 } from "next/font/google";
-import { CardType } from "../../../../types/types";
+import { CardType } from "../../../types/types";
 import Image from "next/image";
 
 const imperialScript = Imperial_Script({

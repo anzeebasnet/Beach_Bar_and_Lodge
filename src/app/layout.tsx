@@ -5,6 +5,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { MainNav } from "@/components/Navbar/Main_Nav";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/HomePage/Footer/Footer";
+import StoreProvider from "./StoreProvider";
 
 const inter = Inter({
   variable: "--font-inter", // Use the variable you want
@@ -24,12 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <ScrollArea className="h-[100vh]">
-          <MainNav />
-          <NextTopLoader color="#fdfefc" showSpinner={false} />
-          {children}
-          <Footer />
-        </ScrollArea>
+        <StoreProvider>
+          <ScrollArea className="h-[100vh]">
+            <MainNav />
+            <NextTopLoader color="#fdfefc" showSpinner={false} />
+            {children}
+            <Footer />
+          </ScrollArea>
+        </StoreProvider>
       </body>
     </html>
   );

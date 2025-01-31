@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Imperial_Script, Montserrat, Red_Hat_Display } from "next/font/google";
 import blogs from "../../../lib/data/blogs.json";
 import Image from "next/image";
-import { BlogType } from "../../../../types/types";
+import { BlogType } from "../../../types/types";
 
 const imperialScript = Imperial_Script({
   weight: ["400"],
