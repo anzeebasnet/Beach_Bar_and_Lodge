@@ -29,24 +29,26 @@ const AvailableRoom = () => {
   const bookingDetails = useAppSelector(
     (state: RootState) => state.bookingDetails.currentBookingDetails
   );
-  if (!bookingDetails) {
-    return <p>No booking details available</p>;
-  }
 
-  // Initialize state for rooms from booking details
-  const initialRooms: RoomState[] = bookingDetails.rooms.map((room) => ({
-    adults: parseInt(room.adults, 10),
-    children: room.children,
-  }));
-  const [rooms, setRooms] = useState<RoomState[]>(initialRooms);
-
-  const [checkin, setCheckin] = useState<Date>(
-    bookingDetails.checkin || new Date()
-  );
-  const [checkout, setCheckout] = useState<Date>(
-    bookingDetails.checkout || addDays(new Date(), 1)
-  );
   const dispatch = useAppDispatch();
+
+  const [rooms, setRooms] = useState<RoomState[]>([]);
+  const [checkin, setCheckin] = useState<Date>(new Date());
+  const [checkout, setCheckout] = useState<Date>(addDays(new Date(), 1));
+
+  // Initialize state only if bookingDetails is available
+  useEffect(() => {
+    if (bookingDetails) {
+      setRooms(
+        bookingDetails.rooms.map((room) => ({
+          adults: parseInt(room.adults, 10),
+          children: room.children,
+        }))
+      );
+      setCheckin(bookingDetails.checkin || new Date());
+      setCheckout(bookingDetails.checkout || addDays(new Date(), 1));
+    }
+  }, [bookingDetails]);
 
   // Calculate totals
   const totalRooms = rooms.length;
@@ -132,24 +134,55 @@ const AvailableRoom = () => {
     );
   };
 
-  useEffect(() => {
-    const updatedBookingDetails: BookingDetails = {
-      ...bookingDetails,
-      checkin,
-      checkout,
-      rooms: rooms.map((room) => ({
-        adults: room.adults.toString(),
-        children: room.children,
-      })),
-    };
+  // useEffect(() => {
+  //   const updatedBookingDetails: BookingDetails = {
+  //     ...bookingDetails,
+  //     checkin,
+  //     checkout,
+  //     rooms: rooms.map((room) => ({
+  //       adults: room.adults.toString(),
+  //       children: room.children,
+  //     })),
+  //   };
 
-    // Only call `onUpdate` if there are changes
-    if (
-      JSON.stringify(bookingDetails) !== JSON.stringify(updatedBookingDetails)
-    ) {
-      dispatch(setBooking(updatedBookingDetails));
-    }
-  }, [rooms, checkin, checkout, bookingDetails]);
+  //   // Only call `onUpdate` if there are changes
+  //   if (
+  //     JSON.stringify(bookingDetails) !== JSON.stringify(updatedBookingDetails)
+  //   ) {
+  //     dispatch(setBooking(updatedBookingDetails));
+  //   }
+  // }, [rooms, checkin, checkout, bookingDetails, dispatch]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (
+        bookingDetails &&
+        (bookingDetails.checkin !== checkin ||
+          bookingDetails.checkout !== checkout ||
+          JSON.stringify(bookingDetails.rooms) !==
+            JSON.stringify(
+              rooms.map((room) => ({
+                adults: room.adults.toString(),
+                children: room.children,
+              }))
+            ))
+      ) {
+        const updatedBookingDetails: BookingDetails = {
+          ...bookingDetails,
+          checkin,
+          checkout,
+          rooms: rooms.map((room) => ({
+            adults: room.adults.toString(),
+            children: room.children,
+          })),
+        };
+
+        dispatch(setBooking(updatedBookingDetails));
+      }
+    }, 300); // Delay by 300ms
+
+    return () => clearTimeout(timeout);
+  }, [rooms, checkin, checkout, bookingDetails, dispatch]);
 
   return (
     <div className="bg-[#ecefea] flex flex-col gap-2 sm:py-0">
