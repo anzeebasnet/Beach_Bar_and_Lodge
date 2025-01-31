@@ -18,7 +18,11 @@
         "Functional Add-ons: Desk, seating area, electric kettle, and ironing facilities.",
         "Additional Perks: Tile or hardwood flooring, wake-up service, and cleaning essentials."
       ],
-      "orientation": "left"
+      "orientation": "left",
+      "price": {
+        "OnePerson": "NPR 5,586",
+        "TwoPerson": "NPR 6,207"
+      }
     },
     {
       "images": [
@@ -38,7 +42,11 @@
         "Functional Add-ons: Desk, seating area, electric kettle, and ironing facilities.",
         "Additional Perks: Tile or hardwood flooring, wake-up service, and cleaning essentials."
       ],
-      "orientation": "right"
+      "orientation": "right",
+      "price": {
+        "OnePerson": "NPR 5,586",
+        "TwoPerson": "NPR 6,207"
+      }
     }
   ]
 }
