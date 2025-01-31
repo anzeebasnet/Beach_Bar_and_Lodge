@@ -36,7 +36,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-const page = () => {
+const Page = () => {
   const [activeImage, setActiveImage] = React.useState<string>("");
   const [activeIndex, setActiveIndex] = React.useState<number | null>(null);
   const [totalImages, setTotalImages] = React.useState<number | null>(null);
@@ -120,6 +120,10 @@ const page = () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [activeImage, activeIndex]);
+
+  useEffect(() => {
+    handleNextImage();
+  }, []);
 
   return (
     <div>
@@ -311,7 +315,7 @@ const page = () => {
               className="flex flex-wrap gap-1 items-center justify-center"
             >
               {imagesData.TotalImages?.map((item, index) => (
-                <div>
+                <div key={index}>
                   <Image
                     src={item}
                     alt="image"
@@ -334,7 +338,7 @@ const page = () => {
               className="flex flex-wrap gap-1 items-center justify-center"
             >
               {imagesData.View?.map((item, index) => (
-                <div>
+                <div key={index}>
                   <Image
                     src={item}
                     alt="image"
@@ -353,7 +357,7 @@ const page = () => {
               className="flex flex-wrap gap-1 items-center justify-center"
             >
               {imagesData.Dining?.map((item, index) => (
-                <div>
+                <div key={index}>
                   <Image
                     src={item}
                     alt="image"
@@ -372,7 +376,7 @@ const page = () => {
               className="flex flex-wrap gap-1 items-center justify-center"
             >
               {imagesData.Room?.map((item, index) => (
-                <div>
+                <div key={index}>
                   <Image
                     src={item}
                     alt="image"
@@ -391,7 +395,7 @@ const page = () => {
               className="flex flex-wrap gap-1 items-center justify-center"
             >
               {imagesData.Food?.map((item, index) => (
-                <div>
+                <div key={index}>
                   <Image
                     src={item}
                     alt="image"
@@ -412,4 +416,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

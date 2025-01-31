@@ -27,7 +27,7 @@ const roboto = Roboto_Condensed({
   subsets: ["latin"],
 });
 
-const page = () => {
+const Page = () => {
   const bookingView = useAppSelector(
     (state: RootState) => state.bookingView.currentBookingView
   );
@@ -53,4 +53,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

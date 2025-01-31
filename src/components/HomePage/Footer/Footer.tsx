@@ -48,7 +48,7 @@ export default function Footer() {
       <section className="text-center py-4 md:py-8">
         <h2 className={`${imperialScript.className} custom-h2`}>Reach Us</h2>
         <p className={`${montserrat.className} custom-text`}>
-          Let's Get you to Beach Bar and Lodge
+          Let&apos;s Get you to Beach Bar and Lodge
         </p>
       </section>
 
