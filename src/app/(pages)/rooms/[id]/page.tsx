@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { RoomsData, RoomType } from "../../../../../types/types";
+import { RoomsData, RoomType } from "../../../../types/types";
 import roomsData from "@/lib/data/rooms.json";
 import Image from "next/image";
 import { Montserrat, Poppins, Red_Hat_Display } from "next/font/google";
@@ -12,10 +12,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Booking from "@/components/Cards/Booking";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import RoomCarousel from "@/components/Carousel/RoomCarousel/RoomCarousel";
+import Booking from "@/components/Cards/Booking";
 
 const red_hat_display = Red_Hat_Display({
   weight: ["400"],

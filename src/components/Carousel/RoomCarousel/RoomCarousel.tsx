@@ -11,7 +11,7 @@ import Link from "next/link";
 import roomsDataJson from "@/lib/data/rooms.json";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import { RoomsData } from "../../../../types/types";
+import { RoomsData } from "../../../types/types";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
