@@ -63,11 +63,16 @@ const CustomerDetails = () => {
       <div>
         <Progress value={70} />
       </div>
-      <div className="grid grid-cols-4 sm:py-6 py-3">
-        <div className="col-span-3">
+      <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:py-6 py-3">
+        <div className="xl:col-span-3 col-span-2">
           <CustomerDetailForm />
         </div>
-        <BookingSummaryCard />
+
+        <div className="col-span-1 md:block hidden">
+          <div className="sticky top-20">
+            <BookingSummaryCard />
+          </div>
+        </div>
       </div>
     </div>
   );
