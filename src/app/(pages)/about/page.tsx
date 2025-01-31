@@ -63,7 +63,7 @@ export default function Page() {
 
   return (
     <main className={`${red_hat_display.className}`}>
-      <section className="relative w-full overflow-hidden h-[75vh]">
+      <section className="relative w-full overflow-hidden h-[calc(100vh-4rem)] ">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-500"
