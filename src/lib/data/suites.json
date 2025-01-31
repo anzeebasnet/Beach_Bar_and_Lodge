@@ -20,8 +20,8 @@
       ],
       "orientation": "left",
       "price": {
-        "OnePerson": "NPR 5,586",
-        "TwoPerson": "NPR 6,207"
+        "OnePerson": "5586",
+        "TwoPerson": "6207"
       }
     },
     {
@@ -44,8 +44,8 @@
       ],
       "orientation": "right",
       "price": {
-        "OnePerson": "NPR 5,586",
-        "TwoPerson": "NPR 6,207"
+        "OnePerson": "5586",
+        "TwoPerson": "6207"
       }
     }
   ]

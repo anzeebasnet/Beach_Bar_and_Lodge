@@ -1,6 +1,5 @@
 "use client";
 
-import { BookingDetails } from "@/types/types";
 import { DateRangePicker } from "./DateRangePicker";
 import {
   Popover,
@@ -10,22 +9,21 @@ import {
 import { Button } from "../../ui/button";
 import { cn } from "@/lib/utils";
 import { Progress } from "@/components/ui/progress";
-import AvailableRoomCard from "@/components/Cards/AvailableRoomCard";
-import { useEffect, useState } from "react";
-import { addDays, differenceInDays } from "date-fns";
+import { useState } from "react";
+import { addDays } from "date-fns";
 import { DateRange } from "react-day-picker";
 import { MdDelete } from "react-icons/md";
 import { Minus, Plus } from "lucide-react";
 import { useAppDispatch, useAppSelector } from "@/lib/store/hooks";
-import { setBooking } from "@/lib/store/features/Booking/Booking";
 import { RootState } from "@/lib/store/store";
+import CustomerDetailForm from "@/components/Forms/CustomerDetailForm";
 
 interface RoomState {
   adults: number;
   children: string[];
 }
 
-const AvailableRoom = () => {
+const CustomerDetails = () => {
   const bookingDetails = useAppSelector(
     (state: RootState) => state.bookingDetails.currentBookingDetails
   );
@@ -132,25 +130,6 @@ const AvailableRoom = () => {
     );
   };
 
-  useEffect(() => {
-    const updatedBookingDetails: BookingDetails = {
-      ...bookingDetails,
-      checkin,
-      checkout,
-      rooms: rooms.map((room) => ({
-        adults: room.adults.toString(),
-        children: room.children,
-      })),
-    };
-
-    // Only call `onUpdate` if there are changes
-    if (
-      JSON.stringify(bookingDetails) !== JSON.stringify(updatedBookingDetails)
-    ) {
-      dispatch(setBooking(updatedBookingDetails));
-    }
-  }, [rooms, checkin, checkout, bookingDetails]);
-
   return (
     <div className="bg-[#ecefea] flex flex-col gap-2 sm:py-0">
       <div className="flex sm:flex-row flex-col sm:gap-4 bg-[#e2e8de] sm:py-2 py-6 sm:px-6 px-3">
@@ -231,7 +210,6 @@ const AvailableRoom = () => {
                           </Button>
                         </div>
                       </div>
-                      {/* Section for children */}
                       <div className="flex flex-col gap-2 py-2">
                         <span className="text-sm font-medium text-gray-700">
                           Children under 7 years old
@@ -253,7 +231,6 @@ const AvailableRoom = () => {
                         </div>
                       </div>
                     </div>
-                    {/* Section to select child ages */}
                     {rooms[roomIndex].children.map((age, childIndex) => (
                       <div
                         key={childIndex}
@@ -293,17 +270,15 @@ const AvailableRoom = () => {
       </div>
       <div>
         <h2 className="text-xl text-center font-normal text-gray-700 py-2">
-          Select Your Room
+          Details of your stay
         </h2>
       </div>
       <div>
-        <Progress value={35} />
+        <Progress value={70} />
       </div>
-      <div className="sm:px-6 px-3 sm:py-6 py-10 ">
-        <AvailableRoomCard />
-      </div>
+      <CustomerDetailForm />
     </div>
   );
 };
 
-export default AvailableRoom;
+export default CustomerDetails;

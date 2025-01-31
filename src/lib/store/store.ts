@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import bookingSliceReducer from "./features/Booking/Booking"
 import bookingViewSliceReducer from "./features/BookingView/BookingView"
+import selectRoomSliceReducer from "./features/SelectRoom/SelectRoom"
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
           bookingDetails: bookingSliceReducer,
           bookingView: bookingViewSliceReducer,
+          selectRoom: selectRoomSliceReducer,
         },
       })
 }

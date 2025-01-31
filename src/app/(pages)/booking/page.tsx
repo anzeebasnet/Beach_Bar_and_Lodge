@@ -1,16 +1,16 @@
 "use client";
 
 import AvailableRoom from "@/components/(Pages)/Booking/AvailableRooms";
+import CustomerDetails from "@/components/(Pages)/Booking/CustomerDetails";
 import BookingForm from "@/components/Forms/BookingForm";
 import { useAppSelector } from "@/lib/store/hooks";
 import { RootState } from "@/lib/store/store";
-import { BookingDetails } from "@/types/types";
 import {
   Imperial_Script,
   Montserrat,
   Roboto_Condensed,
 } from "next/font/google";
-import React, { useState } from "react";
+import React from "react";
 
 const imperialScript = Imperial_Script({
   weight: ["400"],
@@ -28,23 +28,9 @@ const roboto = Roboto_Condensed({
 });
 
 const page = () => {
-  const [viewMode, setViewMode] = useState<"form" | "cards">("form");
-  const [bookingDetails, setBookingDetails] = useState<BookingDetails | null>(
-    null
-  );
   const bookingView = useAppSelector(
     (state: RootState) => state.bookingView.currentBookingView
   );
-
-  const handleSubmitBooking = (values: BookingDetails) => {
-    setBookingDetails(values);
-    setViewMode("cards");
-  };
-
-  const handleUpdateBookingDetails = (updatedDetails: BookingDetails) => {
-    setBookingDetails(updatedDetails);
-    console.log(updatedDetails);
-  };
 
   return (
     <main className={`${roboto.className} container mx-auto p-5 max-w-7xl`}>
@@ -54,7 +40,15 @@ const page = () => {
           Turn your dream getaway into reality!
         </p>
       </div>
-      {bookingView === "form" ? <BookingForm /> : <AvailableRoom />}
+      {bookingView === "form" ? (
+        <BookingForm />
+      ) : bookingView === "cards" ? (
+        <AvailableRoom />
+      ) : bookingView === "CustomerDetails" ? (
+        <CustomerDetails />
+      ) : (
+        "No View"
+      )}
     </main>
   );
 };
