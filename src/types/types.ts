@@ -38,4 +38,17 @@ export type RoomCardType = {
   title: string;
   description: string[];
   orientation?: "left" | "right";
+  price: {
+    OnePerson: string;
+    TwoPerson: string;
+  };
+};
+
+export type BookingDetails = {
+  checkin: Date;
+  checkout: Date;
+  rooms: {
+    adults: string;
+    children: string[];
+  }[];
 };
