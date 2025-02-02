@@ -232,7 +232,7 @@ const AvailableRoom = () => {
                     {rooms.length > 1 && roomIndex > 0 ? (
                       <button
                         onClick={handleRemoveRoom}
-                        className="text-primary hover:text-secondary bg-white"
+                        className="text-primary_text hover:text-secondary bg-white"
                       >
                         <MdDelete size={23} />
                       </button>

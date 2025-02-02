@@ -58,7 +58,7 @@ export function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
         }}
       >
         <DialogHeader>
-          <DialogTitle className="text-primary text-xl">
+          <DialogTitle className="text-primary_text text-xl">
             {room.title}
           </DialogTitle>
         </DialogHeader>
@@ -99,7 +99,7 @@ export function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
           </div>
           <div>
             <h3
-              className={`${montserrat.className} text-lg font-semibold text-primary`}
+              className={`${montserrat.className} text-lg font-semibold text-primary_text`}
             >
               Price Details
             </h3>

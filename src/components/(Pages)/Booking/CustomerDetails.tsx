@@ -97,7 +97,7 @@ const CustomerDetails = () => {
 
   return (
     <div className="bg-[#ecefea] flex flex-col gap-2 sm:py-0">
-      <div className="flex sm:flex-row flex-col sm:gap-4 bg-[#e2e8de] sm:py-4 py-6 sm:px-6 px-3">
+      <div className="flex sm:flex-row flex-col sm:gap-4 gap-1 bg-[#e2e8de] sm:py-4 py-6 sm:px-6 px-3">
         <div className="flex flex-col lg:w-[25vw] sm:w-[43vw] w-full h-14  bg-[#d0d8cf] px-4 py-2">
           <p className="text-gray-700 text-xs font-normal">
             Check-in and Check-out
@@ -129,7 +129,7 @@ const CustomerDetails = () => {
         <Progress value={70} />
       </div>
       <div className="relative grid xl:grid-cols-4 md:grid-cols-3 sm:pt-6 md:pb-6 pt-3">
-        <div className="xl:col-span-3 col-span-2">
+        <div className="xl:col-span-3 md:col-span-2 col-span-4">
           <CustomerDetailForm />
         </div>
 
@@ -160,7 +160,7 @@ const CustomerDetails = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-xl text-primary font-medium text-right ">
+                  <div className="text-xl text-primary_text font-medium text-right ">
                     <p>
                       NRs. {calculateTotalPrice(selectedRoom?.price.OnePerson)}
                     </p>
@@ -169,7 +169,7 @@ const CustomerDetails = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="text-primary font-thin border border-primary rounded-full p-1 flex items-center justify-center">
+                    <div className="text-primary_text font-thin border border-primary rounded-full p-1 flex items-center justify-center">
                       {dialogActive ? (
                         <MdOutlineKeyboardArrowDown size={28} />
                       ) : (
@@ -192,7 +192,6 @@ const CustomerDetails = () => {
         </div>
 
         {/* <div className="sm:hidden block sticky bottom-0 col-span-4 mt-6 z-[300]">
-          
           <Sheet
             open={isDrawerOpen}
             onOpenChange={(open) => setIsDrawerOpen(open)}
@@ -218,7 +217,7 @@ const CustomerDetails = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-xl text-primary font-medium text-right ">
+                  <div className="text-xl text-primary_text font-medium text-right ">
                     <p>
                       NRs. {calculateTotalPrice(selectedRoom?.price.OnePerson)}
                     </p>
@@ -227,7 +226,7 @@ const CustomerDetails = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="text-primary font-thin border border-primary rounded-full p-1 flex items-center justify-center">
+                    <div className="text-primary_text font-thin border border-primary rounded-full p-1 flex items-center justify-center">
                       {isDrawerOpen ? (
                         <MdOutlineKeyboardArrowDown size={28} />
                       ) : (

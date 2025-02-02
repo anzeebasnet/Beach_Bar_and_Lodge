@@ -126,7 +126,7 @@ const HotelViewCarousel = () => {
                       />
                       <div className="text-center flex flex-col gap-2">
                         <h2
-                          className={`${engagement.className} text-4xl font-medium text-primary`}
+                          className={`${engagement.className} text-4xl font-medium text-primary_text`}
                         >
                           {item.title}
                         </h2>

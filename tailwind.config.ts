@@ -22,7 +22,10 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: '#003300',
+  				// DEFAULT: '#003300',
+				// DEFAULT: '#4cc9f0',
+				// DEFAULT: '#3599a8',
+				DEFAULT: 'hsl(var(--primary-background))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -42,6 +45,7 @@ export default {
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
 			text_green: 'hsl(var(--text-green))',
+			primary_text: 'hsl(var(--primary-text))',
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',

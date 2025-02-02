@@ -41,13 +41,13 @@ export function MainNav() {
         <div className="mx-auto px-4">
           <div className="flex h-20 items-center justify-between">
             {/* Logo Image */}
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center ">
               <Image
-                src="/assets/images/logo/logo.png"
+                src="/assets/images/new_logo/transparentLogo.png"
                 alt="Beach Bar"
-                height={40}
-                width={40}
-                className="h-16 w-auto"
+                height={200}
+                width={200}
+                className="h-24 w-auto"
               />
             </Link>
 

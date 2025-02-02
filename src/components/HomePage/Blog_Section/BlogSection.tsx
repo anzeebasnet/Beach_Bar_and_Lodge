@@ -48,7 +48,7 @@ const BlogSection = () => {
                 className="rounded w-full"
               />
               <h2
-                className={`${montserrat.className} sm:text-4xl text-xl font-medium text-primary text-center`}
+                className={`${montserrat.className} sm:text-4xl text-xl font-medium text-primary_text text-center`}
               >
                 {item.title}
               </h2>

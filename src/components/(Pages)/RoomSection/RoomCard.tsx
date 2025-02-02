@@ -108,7 +108,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
           <h2
             className={`${
               merriWeather.className
-            } sm:mt-4 mt-2 sm:text-2xl text-xl font-normal text-primary ${
+            } sm:mt-4 mt-2 sm:text-2xl text-xl font-normal text-primary_text ${
               isLeft ? "lg:justify-self-start" : "lg:justify-self-end"
             }`}
           >

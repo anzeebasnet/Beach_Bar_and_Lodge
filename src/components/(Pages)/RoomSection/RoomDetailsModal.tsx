@@ -57,7 +57,7 @@ export function RoomDetailsModal({
         }}
       >
         <DialogHeader>
-          <DialogTitle className="text-primary text-xl">
+          <DialogTitle className="text-primary_text text-xl">
             {room.title}
           </DialogTitle>
           <DialogDescription className="text-gray-800 text-base">

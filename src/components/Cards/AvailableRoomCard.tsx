@@ -70,7 +70,9 @@ const AvailableRoomCard = () => {
             className="w-full"
           />
           <div className="flex flex-col gap-1 p-4">
-            <h2 className="text-lg font-normal text-primary">{room.title}</h2>
+            <h2 className="text-lg font-normal text-primary_text">
+              {room.title}
+            </h2>
             <div className="flex items-center gap-3 text-sm font-normal text-gray-700">
               <p className="flex items-center gap-2">
                 <HiMiniUsers size={20} /> Up to 2 guests

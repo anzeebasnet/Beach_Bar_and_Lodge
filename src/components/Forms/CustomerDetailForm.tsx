@@ -38,12 +38,7 @@ const formSchema = z.object({
   checkouttime: z
     .string()
     .min(1, { message: "Check-out Time selection is required" }),
-  request: z
-    .string()
-    .min(3, {
-      message: "Review can't be empty",
-    })
-    .max(200),
+  request: z.string().optional(),
 });
 
 const StyledFormMessage = styled(FormMessage)`
@@ -99,7 +94,7 @@ const CustomerDetailForm = () => {
   return (
     <Form {...form}>
       <form
-        className="sm:px-6 px-3  flex flex-col sm:gap-6 gap-4"
+        className="sm:px-6 px-3  flex flex-col sm:gap-6 gap-4 w-full"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         {/*Basic Information*/}
