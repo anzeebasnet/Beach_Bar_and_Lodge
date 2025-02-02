@@ -63,25 +63,32 @@ export default function Page() {
 
   return (
     <main className={`${red_hat_display.className}`}>
-      <section className="relative w-full overflow-hidden h-[calc(100vh-4rem)] ">
+      <section>
         {/* Background Image */}
-        <div
+        {/* <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-500"
           style={{
             backgroundImage: `url('${currentHero.image}')`,
           }}
         >
           <div className="absolute inset-0 hero-overlay" />
-        </div>
+        </div> */}
 
-        {/* Content */}
-        <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
-          <h1
-            className={`${imperialScript.className} font-semibold sm:text-8xl text-6xl text-white transition-all duration-500`}
+        <div
+          className="bg-cover bg-center h-[calc(100vh-4rem)] flex flex-col justify-center items-center "
+          style={{
+            backgroundImage: "url('/assets/images/hotel_view/View/beach.jpg')",
+          }}
+        >
+          <h2
+            className={`${imperialScript.className} font-semibold sm:text-6xl text-4xl text-white text-center capitalize`}
           >
-            {currentHero.title}
-          </h1>
-          <Link href={"/booking"} className="custom-button">
+            Your escape by the lake
+          </h2>
+          <Link
+            href="/booking"
+            className={`${red_hat_display.className} custom-button`}
+          >
             Book Now
           </Link>
         </div>
