@@ -36,7 +36,6 @@ const AvailableRoom = () => {
   const [checkin, setCheckin] = useState<Date>(new Date());
   const [checkout, setCheckout] = useState<Date>(addDays(new Date(), 1));
 
-  // Initialize state only if bookingDetails is available
   useEffect(() => {
     if (bookingDetails) {
       setRooms(
@@ -134,25 +133,6 @@ const AvailableRoom = () => {
     );
   };
 
-  // useEffect(() => {
-  //   const updatedBookingDetails: BookingDetails = {
-  //     ...bookingDetails,
-  //     checkin,
-  //     checkout,
-  //     rooms: rooms.map((room) => ({
-  //       adults: room.adults.toString(),
-  //       children: room.children,
-  //     })),
-  //   };
-
-  //   // Only call `onUpdate` if there are changes
-  //   if (
-  //     JSON.stringify(bookingDetails) !== JSON.stringify(updatedBookingDetails)
-  //   ) {
-  //     dispatch(setBooking(updatedBookingDetails));
-  //   }
-  // }, [rooms, checkin, checkout, bookingDetails, dispatch]);
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (
@@ -179,7 +159,7 @@ const AvailableRoom = () => {
 
         dispatch(setBooking(updatedBookingDetails));
       }
-    }, 300); // Delay by 300ms
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, [rooms, checkin, checkout, bookingDetails, dispatch]);
@@ -325,7 +305,7 @@ const AvailableRoom = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-xl text-center font-normal text-gray-700 py-2">
+        <h2 className="text-xl text-center font-normal text-primary py-2">
           Select Your Room
         </h2>
       </div>

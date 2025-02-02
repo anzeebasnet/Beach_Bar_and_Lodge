@@ -141,13 +141,13 @@ const RoomCard: React.FC<RoomCardProps> = ({
           >
             <Link
               href={"/booking"}
-              className={`${barlow.className} rounded font-thin sm:text-lg text-base px-8 py-1 bg-text_green hover:bg-primary text-white`}
+              className={`${barlow.className} custom-blue-btn`}
             >
               Book Now
             </Link>
             <button
               onClick={onDetailsClick}
-              className={`${barlow.className} rounded font-thin sm:text-lg text-base px-8 py-1 bg-text_green hover:bg-primary text-white`}
+              className={`${barlow.className} custom-blue-btn`}
             >
               View Prices
             </button>

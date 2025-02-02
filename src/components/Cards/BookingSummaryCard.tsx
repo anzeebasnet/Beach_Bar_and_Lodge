@@ -68,7 +68,7 @@ const BookingSummaryCard = () => {
   return (
     <div>
       <div className="bg-white md:rounded-none rounded-sm md:mr-6">
-        <h2 className="font-normal text-2xl text-left text-gray-700 md:py-6 py-3 lg:px-6 px-3">
+        <h2 className="font-normal text-2xl text-left text-primary_text md:py-6 py-3 lg:px-6 px-3">
           My Booking
         </h2>
         <p className="border-b border-b-gray-300"></p>

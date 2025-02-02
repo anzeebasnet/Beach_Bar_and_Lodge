@@ -68,9 +68,7 @@ export default function Page() {
           </div>
 
           <div className="md:col-span-2 flex justify-center">
-            <Button className="bg-[#45813C] hover:bg-[#3a6d33] text-white px-8 py-2 rounded">
-              Subscribe
-            </Button>
+            <button className="custom-blue-btn">Subscribe</button>
           </div>
         </form>
       </section>
@@ -83,13 +81,13 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-10">
           {/* Resort Contact */}
           <div className="space-y-4">
-            <h3 className="text-[#2C5530] text-2xl font-semibold mb-6">
+            <h3 className="text-primary_text text-2xl font-semibold mb-6">
               Beach Lodge
             </h3>
             <p className="flex items-start justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0 mt-1"
+                className="h-6 w-6 text-primary shrink-0 mt-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -112,7 +110,7 @@ export default function Page() {
             <p className="flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0"
+                className="h-6 w-6 text-primary shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -129,7 +127,7 @@ export default function Page() {
             <p className="flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0"
+                className="h-6 w-6 text-primary shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -147,13 +145,13 @@ export default function Page() {
 
           {/* Sales Office */}
           <div className="space-y-4">
-            <h3 className="text-[#2C5530] text-2xl font-semibold mb-6">
+            <h3 className="text-primary_text text-2xl font-semibold mb-6">
               Sales Office
             </h3>
             <p className="flex items-start justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0 mt-1"
+                className="h-6 w-6 text-primary shrink-0 mt-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -176,7 +174,7 @@ export default function Page() {
             <p className="flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0"
+                className="h-6 w-6 text-primary shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -193,7 +191,7 @@ export default function Page() {
             <p className="flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#45813C] shrink-0"
+                className="h-6 w-6 text-primary shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

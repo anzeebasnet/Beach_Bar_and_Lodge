@@ -100,7 +100,7 @@ const CustomerDetailForm = () => {
         {/*Basic Information*/}
 
         <div className=" bg-white">
-          <h2 className="font-normal text-2xl  text-gray-700 py-6 px-5">
+          <h2 className="font-normal text-2xl  text-primary_text py-6 px-5">
             Customer
           </h2>
           <p className="border-b border-b-gray-300"></p>
@@ -192,7 +192,7 @@ const CustomerDetailForm = () => {
 
         {/*Additional Information*/}
         <div className=" bg-white">
-          <h2 className="font-normal text-2xl  text-gray-700 py-6 px-5">
+          <h2 className="font-normal text-2xl  text-primary_text py-6 px-5">
             Additional Information
           </h2>
           <p className="border-b border-b-gray-300"></p>
@@ -279,12 +279,12 @@ const CustomerDetailForm = () => {
             </div>
           </div>
         </div>
-        <Button
+        <button
           type="submit"
-          className="bg-primary hover:bg-secondary font-normal sm:w-1/3 w-full place-self-end"
+          className="custom-blue-btn sm:w-1/3 w-full place-self-end"
         >
           Book Now
-        </Button>
+        </button>
       </form>
     </Form>
   );
