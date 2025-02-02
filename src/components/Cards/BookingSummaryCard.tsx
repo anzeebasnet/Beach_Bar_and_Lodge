@@ -67,20 +67,20 @@ const BookingSummaryCard = () => {
 
   return (
     <div>
-      <div className="bg-white mr-6">
-        <h2 className="font-normal text-2xl  text-gray-700 py-6 lg:px-6 px-3">
+      <div className="bg-white md:rounded-none rounded-sm md:mr-6">
+        <h2 className="font-normal text-2xl text-left text-gray-700 md:py-6 py-3 lg:px-6 px-3">
           My Booking
         </h2>
         <p className="border-b border-b-gray-300"></p>
-        <div className="bg-[#d4ddd4] py-2 lg:px-6 px-3">
+        <div className="bg-[#d4ddd4] py-2 lg:px-6 px-3 text-left">
           <p className="text-base font-medium">
             {calculateNumberOfDays()}{" "}
             {`${calculateNumberOfDays() > 1 ? "nights" : "night"}`}
           </p>
         </div>
         <div className="flex gap-2 items-start py-4 lg:px-6 px-3">
-          <div className="flex flex-col">
-            <div className="flex gap-1 items-end">
+          <div className="flex flex-col items-start">
+            <div className="flex gap-1 md:items-end items-center">
               <p className="text-xl font-medium">{checkinDate}</p>
               <p className="text-[17px] font-normal text-gray-800">
                 {checkinMonth}
@@ -92,8 +92,8 @@ const BookingSummaryCard = () => {
           <p className="pt-1">
             <Minus size={20} />
           </p>
-          <div className="flex flex-col">
-            <div className="flex gap-1 items-end">
+          <div className="flex flex-col items-start">
+            <div className="flex gap-1 md:items-end items-center">
               <p className="text-xl font-medium">{checkoutDate}</p>
               <p className="text-[17px] font-normal text-gray-800">
                 {checkoutMonth}
@@ -103,7 +103,7 @@ const BookingSummaryCard = () => {
             <p className="text-sm font-normal text-gray-700">till 6 PM</p>
           </div>
         </div>
-        <div className="bg-[#d4ddd4] py-2 lg:px-6 px-3">
+        <div className="bg-[#d4ddd4] py-2 lg:px-6 px-3 text-left">
           <p className="text-base font-medium">Room:</p>
           <p className="text-primary font-medium text-base">
             {selectedRoom?.title}
@@ -115,7 +115,7 @@ const BookingSummaryCard = () => {
             Taxes and Fees Included
           </p>
         </div>
-        <div className="text-primary text-[15px] bg-[#d4ddd4] py-2 text-center">
+        <div className="text-primary text-[15px] bg-[#d4ddd4] py-2 text-center md:rounded-b-none rounded-b-sm">
           Booking Summary
         </div>
       </div>
