@@ -94,7 +94,7 @@ const BookingForm = () => {
 
   return (
     <div className="bg-[#ecefea] ">
-      <p className="border-b border-b-gray-300 text-center text-xl py-4 text-gray-600 font-semibold">
+      <p className="border-b border-b-gray-300 text-center text-xl py-4 text-primary font-semibold">
         Details of your stay
       </p>
       <Form {...form}>
@@ -258,13 +258,12 @@ const BookingForm = () => {
               Add Room <Plus size={20} />
             </button>
           </div>
-          <Button
+          <button
             type="submit"
-            // onClick={() => console.log(form.getValues())}
-            className="w-full rounded-md my-4 sm:h-14 h-10 sm:text-lg text-base font-thin"
+            className="w-full rounded-md my-4 sm:h-12 h-10 sm:text-lg text-base font-thin text-white hover:bg-primary_text bg-primary"
           >
             Check availability
-          </Button>
+          </button>
         </form>
       </Form>
     </div>

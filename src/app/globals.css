@@ -68,7 +68,27 @@
 }
 
 .custom-button:hover {
-  background-color: #2c5530;
+  background-color: #09aed7;
+}
+
+
+.custom-blue-btn {
+  border-radius: 0.375rem;
+  font-weight: 200;
+  font-size: 1rem;
+  padding: 0.25rem 2rem;
+  background-color: #09aed7;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .custom-blue-btn {
+    font-size: 1.125rem;
+  }
+}
+
+.custom-blue-btn:hover {
+  background-color: #3597a7;
 }
 
 

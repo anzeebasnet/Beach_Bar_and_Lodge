@@ -121,7 +121,7 @@ const CustomerDetails = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-xl text-center font-normal text-gray-700 py-2">
+        <h2 className="text-xl text-center font-normal text-primary py-2">
           Details of your stay
         </h2>
       </div>

@@ -69,30 +69,32 @@ const AvailableRoomCard = () => {
             height={300}
             className="w-full"
           />
-          <div className="flex flex-col gap-1 p-4">
-            <h2 className="text-lg font-normal text-primary_text">
-              {room.title}
-            </h2>
-            <div className="flex items-center gap-3 text-sm font-normal text-gray-700">
-              <p className="flex items-center gap-2">
-                <HiMiniUsers size={20} /> Up to 2 guests
-              </p>
-              <p className="flex items-center gap-2">
-                <Expand size={18} /> 40 m²
-              </p>
-            </div>
-            <div>
+          <div className="flex justify-between items-end p-4">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-lg font-normal text-primary_text">
+                {room.title}
+              </h2>
+              <div className="flex items-center gap-3 text-sm font-normal text-gray-700">
+                <p className="flex items-center gap-2">
+                  <HiMiniUsers size={20} /> Up to 2 guests
+                </p>
+                <p className="flex items-center gap-2">
+                  <Expand size={18} /> 40 m²
+                </p>
+              </div>
               <p>
                 NRs. {calculateTotalPrice(room.price?.OnePerson ?? 0)}/
                 {calculateNumberOfDays()}{" "}
                 {`${calculateNumberOfDays() > 1 ? "nights" : "night"}`}
               </p>
-              <Button
+            </div>
+            <div>
+              <button
                 onClick={() => handleRoomSelect(room)}
-                className="mt-4 rounded-full"
+                className=" text-white bg-primary hover:bg-primary_text rounded-sm sm:text-[15px] text-xs px-8 py-2"
               >
                 Select
-              </Button>
+              </button>
             </div>
           </div>
         </div>
