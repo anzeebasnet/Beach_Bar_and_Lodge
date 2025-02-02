@@ -47,7 +47,7 @@ const Page = () => {
       ) : bookingView === "CustomerDetails" ? (
         <CustomerDetails />
       ) : (
-        "No View"
+        ""
       )}
     </main>
   );
