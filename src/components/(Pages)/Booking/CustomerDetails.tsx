@@ -160,7 +160,7 @@ const CustomerDetails = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-xl text-primary font-medium text-right ">
+                  <div className="text-xl text-primary_text font-medium text-right ">
                     <p>
                       NRs. {calculateTotalPrice(selectedRoom?.price.OnePerson)}
                     </p>
@@ -169,7 +169,7 @@ const CustomerDetails = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="text-primary font-thin border border-primary rounded-full p-1 flex items-center justify-center">
+                    <div className="text-primary_text font-thin border border-primary rounded-full p-1 flex items-center justify-center">
                       {dialogActive ? (
                         <MdOutlineKeyboardArrowDown size={28} />
                       ) : (
@@ -217,7 +217,7 @@ const CustomerDetails = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-xl text-primary font-medium text-right ">
+                  <div className="text-xl text-primary_text font-medium text-right ">
                     <p>
                       NRs. {calculateTotalPrice(selectedRoom?.price.OnePerson)}
                     </p>
@@ -226,7 +226,7 @@ const CustomerDetails = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="text-primary font-thin border border-primary rounded-full p-1 flex items-center justify-center">
+                    <div className="text-primary_text font-thin border border-primary rounded-full p-1 flex items-center justify-center">
                       {isDrawerOpen ? (
                         <MdOutlineKeyboardArrowDown size={28} />
                       ) : (

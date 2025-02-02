@@ -60,7 +60,7 @@ export default function Page() {
           />
 
           <div className="md:col-span-2 flex justify-center my-4">
-            <Link href="/book_now" passHref>
+            <Link href="/booking" passHref>
               <div className="border border-gray-300 rounded px-4 py-2 flex items-center justify-center text-gray-500">
                 JOIN NOW
               </div>

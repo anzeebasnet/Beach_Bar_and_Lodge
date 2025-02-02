@@ -105,17 +105,17 @@ const BookingSummaryCard = () => {
         </div>
         <div className="bg-[#d4ddd4] py-2 lg:px-6 px-3 text-left">
           <p className="text-base font-medium">Room:</p>
-          <p className="text-primary font-medium text-base">
+          <p className="text-primary_text font-medium text-base">
             {selectedRoom?.title}
           </p>
         </div>
-        <div className="text-2xl text-primary font-medium text-right py-6 lg:px-6 px-3">
+        <div className="text-2xl text-primary_text font-medium text-right py-6 lg:px-6 px-3">
           <p>NRs. {calculateTotalPrice(selectedRoom?.price.OnePerson)}</p>
           <p className="text-gray-600 font-normal text-base">
             Taxes and Fees Included
           </p>
         </div>
-        <div className="text-primary text-[15px] bg-[#d4ddd4] py-2 text-center md:rounded-b-none rounded-b-sm">
+        <div className="text-primary_text text-[15px] bg-[#d4ddd4] py-2 text-center md:rounded-b-none rounded-b-sm">
           Booking Summary
         </div>
       </div>

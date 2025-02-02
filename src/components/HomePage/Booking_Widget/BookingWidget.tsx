@@ -205,7 +205,7 @@ export default function BookingWidget() {
           <div className="flex items-end">
             <Link href="/rooms">
               <Button
-                className="w-full bg-green-600 text-white hover:bg-green-700 rounded"
+                className="w-full bg-primary_text text-white hover:bg-white hover:text-primary_text rounded"
                 size="lg"
               >
                 FIND ROOM
