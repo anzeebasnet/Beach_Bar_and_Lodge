@@ -29,7 +29,6 @@ export function MainNav() {
 
   const navLinks = [
     { href: "/rooms", label: "Our Rooms" },
-    // { href: "/packages", label: "Packages" },
     { href: "/gallery", label: "Gallery" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
@@ -43,7 +42,7 @@ export function MainNav() {
             {/* Logo Image */}
             <Link href="/" className="flex items-center ">
               <Image
-                src="/assets/images/new_logo/transparentLogo.png"
+                src="/assets/images/new_logo/logoTransparent.png"
                 alt="Beach Bar"
                 height={200}
                 width={200}
@@ -57,6 +56,7 @@ export function MainNav() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  scroll={true}
                   className="relative text-white hover:text-gray-300 text-sm transition-colors group uppercase"
                 >
                   {link.label}
