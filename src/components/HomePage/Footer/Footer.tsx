@@ -30,14 +30,12 @@ const navLinks = [
   { name: "About us", href: "/about" },
   { name: "Our Rooms", href: "/rooms" },
   { name: "Our Gallery", href: "/gallery" },
-  { name: "Packages", href: "/packages" },
   { name: "Reach Us", href: "/contact" },
 ];
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/BeachBarLodge" },
-  { icon: Instagram, href: "#" },
-  { icon: Youtube, href: "#" },
+  { icon: Instagram, href: "https://www.instagram.com/beachbarandlodge/" },
   { icon: Linkedin, href: "#" },
 ];
 
@@ -95,45 +93,48 @@ export default function Footer() {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-primary text-white py-6 md:py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start md:items-center">
+      <footer className="bg-primary text-white pb-4 pt-2">
+        <div className=" xl:px-12 px-8">
+          <div className="grid md:grid-cols-5 justify-between gap-6 items-start md:items-center">
             {/* Logo and Description */}
-            <div className="space-y-4 mt-4">
+            <div className="col-span-3">
               <Image
-                src="/assets/images/logo/logo.png"
+                src="/assets/images/new_logo/transparentLogo.png"
                 alt="Beach Bar and Lodge Logo"
-                width={100}
-                height={50}
+                width={200}
+                height={200}
+                className="h-32 w-auto"
               />
-              <p className="text-xs md:text-sm opacity-80 max-w-xl">
-                The Beach Bar and Lodge is a serene lakeside retreat nestled on
-                the picturesque shores of Fewa Lake in Pokhara. Just a short
-                10-minute drive from Lakeside and 25 minutes from Pokhara
-                Airport, this lodge offers breathtaking views of the tranquil
-                lake and surrounding hills. Guests can enjoy a vibrant bar,
-                delicious cuisine, and a relaxing ambiance perfect for unwinding
-                after a day of exploration. With its warm hospitality, cozy
-                accommodations, and easy access to water activities and hiking
-                trails, the Beach Bar and Lodge promises an unforgettable
-                experience in the heart of nature.
-              </p>
-              {/* Social Media Links */}
-              <div className="flex gap-4">
-                {socialLinks.map(({ icon: Icon, href }, index) => (
-                  <Link
-                    key={index}
-                    href={href}
-                    className="hover:text-gray-300 transition-colors"
-                  >
-                    <Icon size={18} />
-                  </Link>
-                ))}
+              <div className="flex flex-col gap-6 -mt-3">
+                <p className="text-xs md:text-sm text-justify">
+                  The Beach Bar and Lodge is a serene lakeside retreat nestled
+                  on the picturesque shores of Fewa Lake in Pokhara. Just a
+                  short 10-minute drive from Lakeside and 25 minutes from
+                  Pokhara Airport, this lodge offers breathtaking views of the
+                  tranquil lake and surrounding hills. Guests can enjoy a
+                  vibrant bar, delicious cuisine, and a relaxing ambiance
+                  perfect for unwinding after a day of exploration. With its
+                  warm hospitality, cozy accommodations, and easy access to
+                  water activities and hiking trails, the Beach Bar and Lodge
+                  promises an unforgettable experience in the heart of nature.
+                </p>
+                {/* Social Media Links */}
+                <div className="flex gap-4">
+                  {socialLinks.map(({ icon: Icon, href }, index) => (
+                    <Link
+                      key={index}
+                      href={href}
+                      className="hover:text-primary transition-colors rounded-full bg-white p-3"
+                    >
+                      <Icon size={18} color="black" />
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Navigation */}
-            <nav className="grid grid-cols-2 sm:flex sm:justify-end gap-4 sm:gap-6 text-xs md:text-sm">
+            <nav className="col-span-2 flex md:flex-row flex-col  sm:justify-end gap-4 sm:gap-6 text-sm md:text-base">
               {navLinks.map((link, index) => (
                 <Link
                   key={index}
@@ -145,11 +146,10 @@ export default function Footer() {
               ))}
             </nav>
           </div>
-
-          {/* Copyright */}
-          <div className="mt-6 md:mt-8 pt-4 border-t border-white/20 text-center text-xs md:text-sm opacity-60">
-            © 2025 Beach and Bar Lodge Pvt. Ltd.
-          </div>
+        </div>
+        {/* Copyright */}
+        <div className="mt-6 md:mt-8 pt-4 border-t border-white text-white text-center text-xs md:text-sm">
+          © 2025 Beach and Bar Lodge Pvt. Ltd.
         </div>
       </footer>
     </main>
