@@ -85,13 +85,6 @@ const CustomerDetails = () => {
       return 0;
     }
 
-    console.log(
-      "Number of days:",
-      numberOfDays,
-      "Converted Room price:",
-      price
-    );
-
     return numberOfDays > 0 ? price * numberOfDays : price;
   };
 

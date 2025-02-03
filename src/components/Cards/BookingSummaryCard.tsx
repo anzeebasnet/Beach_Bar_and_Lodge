@@ -20,7 +20,7 @@ const BookingSummaryCard = () => {
     const checkinDate = new Date(bookingDetails.checkin);
     const checkoutDate = new Date(bookingDetails.checkout);
 
-    console.log("Check-in:", checkinDate, "Check-out:", checkoutDate);
+    // console.log("Check-in:", checkinDate, "Check-out:", checkoutDate);
 
     return Math.max(0, differenceInDays(checkoutDate, checkinDate));
   };
@@ -35,12 +35,12 @@ const BookingSummaryCard = () => {
       return 0;
     }
 
-    console.log(
-      "Number of days:",
-      numberOfDays,
-      "Converted Room price:",
-      price
-    );
+    // console.log(
+    //   "Number of days:",
+    //   numberOfDays,
+    //   "Converted Room price:",
+    //   price
+    // );
 
     return numberOfDays > 0 ? price * numberOfDays : price;
   };
