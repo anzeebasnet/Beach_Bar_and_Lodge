@@ -64,22 +64,22 @@ const RoomCard: React.FC<RoomCardProps> = ({
   const isLeft = orientation === "left";
 
   const features = [
-    { icon: <RxDimensions size={20} color="#336634" />, text: "40 m²" },
+    { icon: <RxDimensions size={20} color="#09aed7" />, text: "40 m²" },
     {
-      icon: <LiaSnowflake size={20} color="#336634" />,
+      icon: <LiaSnowflake size={20} color="#09aed7" />,
       text: "Air Conditioning",
     },
-    { icon: <GiSwan size={20} color="#336634" />, text: "Lake View" },
+    { icon: <GiSwan size={20} color="#09aed7" />, text: "Lake View" },
     {
-      icon: <GiForkKnifeSpoon size={20} color="#336634" />,
+      icon: <GiForkKnifeSpoon size={20} color="#09aed7" />,
       text: "Breakfast",
     },
     {
-      icon: <LiaLandmarkSolid size={20} color="#336634" />,
+      icon: <LiaLandmarkSolid size={20} color="#09aed7" />,
       text: "Landmark View",
     },
     {
-      icon: <IoTvOutline size={20} color="#336634" />,
+      icon: <IoTvOutline size={20} color="#09aed7" />,
       text: "Flat Screen TV",
     },
   ];
