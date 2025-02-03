@@ -38,11 +38,11 @@ export default function RoomsPage() {
       <div
         className="bg-cover bg-center h-screen flex flex-col justify-center items-center "
         style={{
-          backgroundImage: "url('/assets/images/rooms/frontDoorView.jpg')",
+          backgroundImage: "url('/assets/images/rooms/frontDoorViewEdit.jpg')",
         }}
       >
         <p
-          className={`${imperialScript.className} font-semibold sm:text-6xl text-4xl text-white text-center`}
+          className={`${imperialScript.className} font-semibold sm:text-6xl text-4xl text-white text-center mt-24`}
         >
           Serene escapes
           <br /> with <br /> Opulent comfort
