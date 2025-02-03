@@ -75,7 +75,7 @@ export default function Page() {
         </div> */}
 
         <div
-          className="bg-cover bg-center h-[calc(100vh-4rem)] flex flex-col justify-center items-center "
+          className="bg-cover bg-center h-screen flex flex-col justify-center items-center "
           style={{
             backgroundImage: "url('/assets/images/hotel_view/View/beach.jpg')",
           }}

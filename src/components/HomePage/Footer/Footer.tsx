@@ -99,7 +99,7 @@ export default function Footer() {
             {/* Logo and Description */}
             <div className="col-span-3">
               <Image
-                src="/assets/images/new_logo/transparentLogo.png"
+                src="/assets/images/new_logo/logoTransparent.png"
                 alt="Beach Bar and Lodge Logo"
                 width={200}
                 height={200}

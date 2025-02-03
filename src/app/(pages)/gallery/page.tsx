@@ -128,7 +128,7 @@ const Page = () => {
   return (
     <div>
       <div
-        className="bg-cover bg-center h-[calc(100vh-4rem)] flex flex-col justify-center items-center "
+        className="bg-cover bg-center h-screen pt-16 flex flex-col justify-center items-center "
         style={{
           backgroundImage:
             "url('/assets/images/hotel_view/View/nightView.jpg')",
